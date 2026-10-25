@@ -1,0 +1,38 @@
+{
+  "README.md": {
+    "bytes": 3764,
+    "sha256": "54f14670035257e79968fa4d3b6807fc2b0598964f4ecbf7a9d63e8d7636e2c8"
+  },
+  "question-bank.csv": {
+    "bytes": 14595,
+    "sha256": "a27e6a235538a3a617d428082a0a1bd73bcfffd16e3c27d69b665dd00488f9d8"
+  },
+  "question-bank.json": {
+    "bytes": 62967,
+    "sha256": "2a3a0714b4d73929909516c145ac9e9f2e95f9999f3f7471c1e268545b1da7c8"
+  },
+  "source-coverage.json": {
+    "bytes": 19620,
+    "sha256": "5159c983c630b8591e3cad63d9f54921d396c7f431d746c04cdf8830ed61fd77"
+  },
+  "verification.json": {
+    "bytes": 2161,
+    "sha256": "74ff2b3917514b8a83da1a89fe08a1f72108a36dc6597901a624a852315a0f55"
+  },
+  "vocabulary.csv": {
+    "bytes": 24564,
+    "sha256": "68fae7e5631f87c946f34cda13cc2d257eb9980d3a416847c9f7d03168f842bd"
+  },
+  "vocabulary.json": {
+    "bytes": 80726,
+    "sha256": "b8343b67dce927e895df9d631b1b5eda6073453b5896582986df346984667601"
+  },
+  "vocabulary.postgresql.sql": {
+    "bytes": 41481,
+    "sha256": "a793faa0ac43128929979d16510b900a617e99865c84b47b8277a89fb9500920"
+  },
+  "wordspire.postgresql.sql": {
+    "bytes": 29890,
+    "sha256": "ce3873d998cb44cb5917876cc9762934d2f56a68fc68bde7c5b7b6fdf90d0916"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "README.md": {
+    "bytes": 3021,
+    "sha256": "45c2e45dd3f99688d61e5e50dcdfc27b498ca30097589fd8dcece787ebbe6099"
+  },
+  "question-bank.json": {
+    "bytes": 75336,
+    "sha256": "e716db31ae8ff39ccba5e38d65aafb416ef942f9a0f59893f83a5dbd1a99df6a"
+  },
+  "verification.json": {
+    "bytes": 2391,
+    "sha256": "d46d95b63201da4b79cdb715d8d2a36a667bf51e0bfd6f276e53c603c5f996b1"
+  },
+  "vocabulary.csv": {
+    "bytes": 29672,
+    "sha256": "b16641aedea7b01f23bc558cf922e907357f20281b6c3b4e5ba5f5a64fbe38d2"
+  },
+  "vocabulary.json": {
+    "bytes": 97704,
+    "sha256": "c9794f503ff80821d15bc7fcf253632c9b1f56a7c4a762e4bdcb57c1244cf961"
+  },
+  "vocabulary.postgresql.sql": {
+    "bytes": 49949,
+    "sha256": "a4cd07f84f4f4484dfa1934854f6c61a1cadd7cd05e4aaa7ab51847d29968f0d"
+  },
+  "wordspire.postgresql.sql": {
+    "bytes": 35105,
+    "sha256": "d53c33b5b46bf49d285de1fb1a249ef5d61b0a2d174eb79bc51bcac7e7f57414"
+  }
+}

@@ -1,0 +1,51 @@
+:root {
+  --ws-background: #FFF8E7;
+  --ws-foreground: #3E2723;
+  --ws-card: #FFFFFF;
+  --ws-card-foreground: #3E2723;
+  --ws-popover: #FFFFFF;
+  --ws-popover-foreground: #3E2723;
+  --ws-primary: #E85D4C;
+  --ws-primary-foreground: #FFFFFF;
+  --ws-muted: #F5E6D3;
+  --ws-muted-foreground: #6D4C41;
+  --ws-border: rgba(62, 39, 35, 0.12);
+  --ws-input: #FFFFFF;
+  --ws-ring: #E85D4C;
+
+  --ws-primary-50: #FDF2F0;
+  --ws-primary-100: #FADBD7;
+  --ws-primary-200: #F5B7AE;
+  --ws-primary-300: #EF9285;
+  --ws-primary-400: #E85D4C;
+  --ws-primary-500: #D64A3A;
+  --ws-primary-600: #B53A2C;
+
+  --ws-neutral-50: #FFFDF8;
+  --ws-neutral-100: #FFF8E7;
+  --ws-neutral-200: #F5E6D3;
+  --ws-neutral-300: #E6D2BA;
+  --ws-neutral-400: #A1887F;
+  --ws-neutral-500: #6D4C41;
+  --ws-neutral-600: #3E2723;
+
+  --ws-state-success: #10B981;
+  --ws-state-success-soft: rgba(16, 185, 129, 0.12);
+  --ws-state-warning: #F59E0B;
+  --ws-state-warning-soft: rgba(245, 158, 11, 0.12);
+  --ws-state-error: #EF4444;
+  --ws-state-error-soft: rgba(239, 68, 68, 0.12);
+  --ws-state-info: #3B82F6;
+  --ws-state-info-soft: rgba(59, 130, 246, 0.12);
+
+  --ws-gold: #F4C542;
+  --ws-sage: #7DB9A8;
+
+  --ws-radius-small: 8px;
+  --ws-radius-medium: 12px;
+  --ws-radius-large: 16px;
+
+  --ws-font-display: 'ZCOOL QingKe HuangYou', 'Nunito', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --ws-font-body: 'Nunito', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --ws-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}

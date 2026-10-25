@@ -1,0 +1,17 @@
+{
+  "name": "词灵塔 WordSpire",
+  "short_name": "词灵塔",
+  "description": "游戏化英语学习平台",
+  "start_url": "/child",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/mascot-word-spirit.jpg",
+      "sizes": "1920x1920",
+      "type": "image/jpeg"
+    }
+  ]
+}

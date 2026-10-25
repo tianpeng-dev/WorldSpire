@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "functions": { "src/app/api/cron/*/route.ts": { "maxDuration": 60 } },
+  "crons": [
+    {
+      "path": "/api/cron/weekly-report",
+      "schedule": "0 3 * * 0"
+    },
+    {
+      "path": "/api/cron/risk-scan",
+      "schedule": "0 12 * * *"
+    }
+  ]
+}

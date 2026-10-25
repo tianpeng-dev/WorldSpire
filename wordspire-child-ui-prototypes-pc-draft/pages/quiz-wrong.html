@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>闯关游戏 · 答错鼓励 · 词灵塔</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&family=Outfit:wght@400;600;700;800&family=ZCOOL+QingKe+HuangYou&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <style id="theme-vars">
+:root {
+  --ws-background: #FFF8E7;
+  --ws-foreground: #3E2723;
+  --ws-card: #FFFFFF;
+  --ws-card-foreground: #3E2723;
+  --ws-popover: #FFFFFF;
+  --ws-popover-foreground: #3E2723;
+  --ws-primary: #E85D4C;
+  --ws-primary-foreground: #FFFFFF;
+  --ws-muted: #F5E6D3;
+  --ws-muted-foreground: #6D4C41;
+  --ws-border: rgba(62, 39, 35, 0.12);
+  --ws-input: #FFFFFF;
+  --ws-ring: #E85D4C;
+  --ws-primary-50: #FDF2F0;
+  --ws-primary-100: #FADBD7;
+  --ws-primary-200: #F5B7AE;
+  --ws-primary-300: #EF9285;
+  --ws-primary-400: #E85D4C;
+  --ws-primary-500: #D64A3A;
+  --ws-primary-600: #B53A2C;
+  --ws-neutral-50: #FFFDF8;
+  --ws-neutral-100: #FFF8E7;
+  --ws-neutral-200: #F5E6D3;
+  --ws-neutral-300: #E6D2BA;
+  --ws-neutral-400: #A1887F;
+  --ws-neutral-500: #6D4C41;
+  --ws-neutral-600: #3E2723;
+  --ws-state-success: #10B981;
+  --ws-state-success-soft: rgba(16, 185, 129, 0.12);
+  --ws-state-warning: #F59E0B;
+  --ws-state-warning-soft: rgba(245, 158, 11, 0.12);
+  --ws-state-error: #EF4444;
+  --ws-state-error-soft: rgba(239, 68, 68, 0.12);
+  --ws-state-info: #3B82F6;
+  --ws-state-info-soft: rgba(59, 130, 246, 0.12);
+  --ws-gold: #F4C542;
+  --ws-sage: #7DB9A8;
+  --ws-radius-small: 8px;
+  --ws-radius-medium: 12px;
+  --ws-radius-large: 16px;
+  --ws-font-display: 'ZCOOL QingKe HuangYou', 'Nunito', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --ws-font-body: 'Nunito', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --ws-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+  <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+  <style type="text/tailwindcss">
+  @theme inline {
+    --color-background: var(--ws-background);
+    --color-foreground: var(--ws-foreground);
+    --color-card: var(--ws-card);
+    --color-card-foreground: var(--ws-card-foreground);
+    --color-popover: var(--ws-popover);
+    --color-popover-foreground: var(--ws-popover-foreground);
+    --color-primary: var(--ws-primary);
+    --color-primary-foreground: var(--ws-primary-foreground);
+    --color-muted: var(--ws-muted);
+    --color-muted-foreground: var(--ws-muted-foreground);
+    --color-border: var(--ws-border);
+    --color-input: var(--ws-input);
+    --color-ring: var(--ws-ring);
+    --radius-sm: var(--ws-radius-small);
+    --radius-md: var(--ws-radius-medium);
+    --radius-lg: var(--ws-radius-large);
+  }
+  @layer base {
+    body { background: var(--ws-background); color: var(--ws-foreground); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+  </style>
+  <style id="semantic-token-fallback">
+    .bg-background { background-color: var(--ws-background); }
+    .text-background { color: var(--ws-background); }
+    .border-background { border-color: var(--ws-background); }
+    .ring-background { --tw-ring-color: var(--ws-background); }
+    .bg-foreground { background-color: var(--ws-foreground); }
+    .text-foreground { color: var(--ws-foreground); }
+    .border-foreground { border-color: var(--ws-foreground); }
+    .ring-foreground { --tw-ring-color: var(--ws-foreground); }
+    .bg-card { background-color: var(--ws-card); }
+    .text-card { color: var(--ws-card); }
+    .border-card { border-color: var(--ws-card); }
+    .ring-card { --tw-ring-color: var(--ws-card); }
+    .bg-card-foreground { background-color: var(--ws-card-foreground); }
+    .text-card-foreground { color: var(--ws-card-foreground); }
+    .border-card-foreground { border-color: var(--ws-card-foreground); }
+    .ring-card-foreground { --tw-ring-color: var(--ws-card-foreground); }
+    .bg-popover { background-color: var(--ws-popover); }
+    .text-popover { color: var(--ws-popover); }
+    .border-popover { border-color: var(--ws-popover); }
+    .ring-popover { --tw-ring-color: var(--ws-popover); }
+    .bg-popover-foreground { background-color: var(--ws-popover-foreground); }
+    .text-popover-foreground { color: var(--ws-popover-foreground); }
+    .border-popover-foreground { border-color: var(--ws-popover-foreground); }
+    .ring-popover-foreground { --tw-ring-color: var(--ws-popover-foreground); }
+    .bg-primary { background-color: var(--ws-primary); }
+    .text-primary { color: var(--ws-primary); }
+    .border-primary { border-color: var(--ws-primary); }
+    .ring-primary { --tw-ring-color: var(--ws-primary); }
+    .bg-primary-foreground { background-color: var(--ws-primary-foreground); }
+    .text-primary-foreground { color: var(--ws-primary-foreground); }
+    .border-primary-foreground { border-color: var(--ws-primary-foreground); }
+    .ring-primary-foreground { --tw-ring-color: var(--ws-primary-foreground); }
+    .bg-muted { background-color: var(--ws-muted); }
+    .text-muted { color: var(--ws-muted); }
+    .border-muted { border-color: var(--ws-muted); }
+    .ring-muted { --tw-ring-color: var(--ws-muted); }
+    .bg-muted-foreground { background-color: var(--ws-muted-foreground); }
+    .text-muted-foreground { color: var(--ws-muted-foreground); }
+    .border-muted-foreground { border-color: var(--ws-muted-foreground); }
+    .ring-muted-foreground { --tw-ring-color: var(--ws-muted-foreground); }
+    .bg-border { background-color: var(--ws-border); }
+    .text-border { color: var(--ws-border); }
+    .border-border { border-color: var(--ws-border); }
+    .ring-border { --tw-ring-color: var(--ws-border); }
+    .bg-input { background-color: var(--ws-input); }
+    .text-input { color: var(--ws-input); }
+    .border-input { border-color: var(--ws-input); }
+    .ring-input { --tw-ring-color: var(--ws-input); }
+    .bg-ring { background-color: var(--ws-ring); }
+    .text-ring { color: var(--ws-ring); }
+    .border-ring { border-color: var(--ws-ring); }
+    .ring-ring { --tw-ring-color: var(--ws-ring); }
+  </style>
+  <link rel="stylesheet" href="../colors_and_type-storybook-draft.css">
+  <link rel="stylesheet" href="../shared-components.css">
+  <style>
+    .ws-shell { background: #FFF8E7; }
+    .ws-page-content { padding: 40px; margin-left: 220px; max-width: 1200px; }
+
+    .ws-sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 100vh;
+      background: linear-gradient(180deg, #FFFBF0 0%, #FFF0D9 100%);
+      border-right: 2px solid rgba(62, 39, 35, 0.08);
+      display: flex;
+      flex-direction: column;
+      padding: 28px 16px 24px;
+      z-index: 100;
+    }
+    .ws-sidebar-brand {
+      font-family: var(--ws-font-display);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ws-primary);
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .ws-sidebar-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex: 1;
+    }
+    .ws-sidebar-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      padding: 16px 18px;
+      border: none;
+      border-radius: var(--ws-radius-large);
+      background: #FFFFFF;
+      color: var(--ws-foreground);
+      font-family: var(--ws-font-body);
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+      box-shadow: 0 2px 0 rgba(62, 39, 35, 0.06);
+    }
+    .ws-sidebar-item svg {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      fill: currentColor;
+    }
+    .ws-sidebar-item:hover { transform: translateY(-2px); box-shadow: 0 4px 0 rgba(62, 39, 35, 0.08); }
+    .ws-sidebar-item[data-active="true"] { background: var(--ws-primary-100); color: var(--ws-primary); box-shadow: 0 3px 0 var(--ws-primary-200); }
+    .ws-sidebar-item[data-key="home"] { background: #FFF3E0; color: #E65100; }
+    .ws-sidebar-item[data-key="map"] { background: #FCE4EC; color: #C2185B; }
+    .ws-sidebar-item[data-key="map"][data-active="true"] { background: var(--ws-primary-100); color: var(--ws-primary); }
+    .ws-sidebar-item[data-key="battle"] { background: #E3F2FD; color: #1565C0; }
+    .ws-sidebar-item[data-key="collection"] { background: #E8F5E9; color: #2E7D32; }
+    .ws-sidebar-item[data-key="report"] { background: #F3E5F5; color: #6A1B9A; }
+
+    .ws-content-wrapper { max-width: 960px; margin: 0 auto; }
+
+    .quiz-wrong {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 80px);
+      text-align: center;
+      gap: 32px;
+    }
+    .quiz-wrong .ws-mascot { width: 160px; height: 160px; }
+    .quiz-wrong .ws-title { font-size: 48px; margin: 0; }
+    .quiz-wrong .encourage-card {
+      max-width: 560px;
+      width: 100%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+    .quiz-wrong .encourage-card p { font-size: 22px; margin: 0; }
+    .quiz-wrong .correct-hint { max-width: 480px; width: 100%; padding: 32px; }
+    .quiz-wrong .correct-hint .answer { font-size: 40px; font-weight: 800; margin: 12px 0 0; color: var(--ws-state-success); }
+    .quiz-wrong .ws-button {
+      min-width: 320px;
+      min-height: 64px;
+      font-size: 24px;
+      box-shadow: 0 6px 0 var(--ws-primary-600);
+    }
+    .quiz-wrong .ws-button:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--ws-primary-600); }
+  </style>
+</head>
+<body class="min-h-screen font-sans antialiased">
+<main class="ws-shell" data-style="storybook">
+  <aside class="ws-sidebar">
+    <div class="ws-sidebar-brand">词灵塔</div>
+    <nav class="ws-sidebar-nav">
+      <button class="ws-sidebar-item" data-key="home" data-dom-id="nav-home" onclick="location.href='home.html'">
+        <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        <span>首页</span>
+      </button>
+      <button class="ws-sidebar-item" data-key="map" data-dom-id="nav-map" data-active="true" onclick="location.href='map.html'">
+        <svg viewBox="0 0 24 24"><path d="M20.5 3l-6 1.5-5.5-1.5-6 1.5v15l6-1.5 5.5 1.5 6-1.5V3z"/></svg>
+        <span>闯关</span>
+      </button>
+      <button class="ws-sidebar-item" data-key="battle" data-dom-id="nav-battle" onclick="location.href='battle-lobby.html'">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <span>对战</span>
+      </button>
+      <button class="ws-sidebar-item" data-key="collection" data-dom-id="nav-collection" onclick="location.href='collection-characters.html'">
+        <svg viewBox="0 0 24 24"><path d="M22 16V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2zm-11-4l2.03 2.71L16 11l4 5H8l3-4zM2 6v14c0 1.1.9 2 2 2h14v-2H4V6H2z"/></svg>
+        <span>收藏</span>
+      </button>
+      <button class="ws-sidebar-item" data-key="report" data-dom-id="nav-report" onclick="location.href='report.html'">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+        <span>报告</span>
+      </button>
+    </nav>
+  </aside>
+
+  <div class="ws-page-content">
+    <div class="ws-content-wrapper">
+      <section class="quiz-wrong">
+        <div class="ws-card encourage-card">
+          <div data-dom-id="wrong-mascot" style="display:flex;align-items:center;gap:20px;">
+            <img src="../assets/mascot-word-spirit.jpg" class="ws-mascot" alt="小塔" style="border-radius:50%;">
+            <div class="ws-card" style="text-align:left;max-width:320px;padding:20px 24px;">
+              <p style="font-size:24px;font-weight:700;margin:0;">“没关系，再试一次！”</p>
+            </div>
+          </div>
+          <h1 class="ws-title">再想想看</h1>
+        </div>
+        <div class="ws-card correct-hint" data-dom-id="wrong-hint">
+          <p style="font-size:22px;color:var(--ws-muted-foreground);margin:0;">正确答案是</p>
+          <p class="answer">🍎 Apple</p>
+        </div>
+        <button class="ws-button" data-dom-id="wrong-retry" onclick="location.href='quiz-question.html'">再试一次</button>
+      </section>
+    </div>
+  </div>
+</main>
+<script>lucide.createIcons();</script>
+</body>
+</html>

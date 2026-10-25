@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storybook Preflight</title>
+    <style id="theme-vars">
+:root {
+  --ws-background: #FFF8E7;
+  --ws-foreground: #3E2723;
+  --ws-card: #FFFFFF;
+  --ws-card-foreground: #3E2723;
+  --ws-popover: #FFFFFF;
+  --ws-popover-foreground: #3E2723;
+  --ws-primary: #E85D4C;
+  --ws-primary-foreground: #FFFFFF;
+  --ws-muted: #F5E6D3;
+  --ws-muted-foreground: #6D4C41;
+  --ws-border: rgba(62, 39, 35, 0.12);
+  --ws-input: #FFFFFF;
+  --ws-ring: #E85D4C;
+
+  --ws-primary-50: #FDF2F0;
+  --ws-primary-100: #FADBD7;
+  --ws-primary-200: #F5B7AE;
+  --ws-primary-300: #EF9285;
+  --ws-primary-400: #E85D4C;
+  --ws-primary-500: #D64A3A;
+  --ws-primary-600: #B53A2C;
+
+  --ws-neutral-50: #FFFDF8;
+  --ws-neutral-100: #FFF8E7;
+  --ws-neutral-200: #F5E6D3;
+  --ws-neutral-300: #E6D2BA;
+  --ws-neutral-400: #A1887F;
+  --ws-neutral-500: #6D4C41;
+  --ws-neutral-600: #3E2723;
+
+  --ws-state-success: #10B981;
+  --ws-state-success-soft: rgba(16, 185, 129, 0.12);
+  --ws-state-warning: #F59E0B;
+  --ws-state-warning-soft: rgba(245, 158, 11, 0.12);
+  --ws-state-error: #EF4444;
+  --ws-state-error-soft: rgba(239, 68, 68, 0.12);
+  --ws-state-info: #3B82F6;
+  --ws-state-info-soft: rgba(59, 130, 246, 0.12);
+
+  --ws-gold: #F4C542;
+  --ws-sage: #7DB9A8;
+
+  --ws-radius-small: 8px;
+  --ws-radius-medium: 12px;
+  --ws-radius-large: 16px;
+
+  --ws-font-display: 'ZCOOL QingKe HuangYou', 'Nunito', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --ws-font-body: 'Nunito', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --ws-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+    <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+    <style type="text/tailwindcss">
+  @theme inline {
+    --color-background: var(--ws-background);
+    --color-foreground: var(--ws-foreground);
+    --color-card: var(--ws-card);
+    --color-card-foreground: var(--ws-card-foreground);
+    --color-popover: var(--ws-popover);
+    --color-popover-foreground: var(--ws-popover-foreground);
+    --color-primary: var(--ws-primary);
+    --color-primary-foreground: var(--ws-primary-foreground);
+    --color-muted: var(--ws-muted);
+    --color-muted-foreground: var(--ws-muted-foreground);
+    --color-border: var(--ws-border);
+    --color-input: var(--ws-input);
+    --color-ring: var(--ws-ring);
+    --radius-sm: var(--ws-radius-small);
+    --radius-md: var(--ws-radius-medium);
+    --radius-lg: var(--ws-radius-large);
+  }
+  @layer base {
+    body { background: var(--ws-background); color: var(--ws-foreground); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+    </style>
+    <style id="semantic-token-fallback">
+      .bg-background { background-color: var(--ws-background); }
+      .text-background { color: var(--ws-background); }
+      .border-background { border-color: var(--ws-background); }
+      .ring-background { --tw-ring-color: var(--ws-background); }
+      .bg-foreground { background-color: var(--ws-foreground); }
+      .text-foreground { color: var(--ws-foreground); }
+      .border-foreground { border-color: var(--ws-foreground); }
+      .ring-foreground { --tw-ring-color: var(--ws-foreground); }
+      .bg-card { background-color: var(--ws-card); }
+      .text-card { color: var(--ws-card); }
+      .border-card { border-color: var(--ws-card); }
+      .ring-card { --tw-ring-color: var(--ws-card); }
+      .bg-card-foreground { background-color: var(--ws-card-foreground); }
+      .text-card-foreground { color: var(--ws-card-foreground); }
+      .border-card-foreground { border-color: var(--ws-card-foreground); }
+      .ring-card-foreground { --tw-ring-color: var(--ws-card-foreground); }
+      .bg-popover { background-color: var(--ws-popover); }
+      .text-popover { color: var(--ws-popover); }
+      .border-popover { border-color: var(--ws-popover); }
+      .ring-popover { --tw-ring-color: var(--ws-popover); }
+      .bg-popover-foreground { background-color: var(--ws-popover-foreground); }
+      .text-popover-foreground { color: var(--ws-popover-foreground); }
+      .border-popover-foreground { border-color: var(--ws-popover-foreground); }
+      .ring-popover-foreground { --tw-ring-color: var(--ws-popover-foreground); }
+      .bg-primary { background-color: var(--ws-primary); }
+      .text-primary { color: var(--ws-primary); }
+      .border-primary { border-color: var(--ws-primary); }
+      .ring-primary { --tw-ring-color: var(--ws-primary); }
+      .bg-primary-foreground { background-color: var(--ws-primary-foreground); }
+      .text-primary-foreground { color: var(--ws-primary-foreground); }
+      .border-primary-foreground { border-color: var(--ws-primary-foreground); }
+      .ring-primary-foreground { --tw-ring-color: var(--ws-primary-foreground); }
+      .bg-muted { background-color: var(--ws-muted); }
+      .text-muted { color: var(--ws-muted); }
+      .border-muted { border-color: var(--ws-muted); }
+      .ring-muted { --tw-ring-color: var(--ws-muted); }
+      .bg-muted-foreground { background-color: var(--ws-muted-foreground); }
+      .text-muted-foreground { color: var(--ws-muted-foreground); }
+      .border-muted-foreground { border-color: var(--ws-muted-foreground); }
+      .ring-muted-foreground { --tw-ring-color: var(--ws-muted-foreground); }
+      .bg-border { background-color: var(--ws-border); }
+      .text-border { color: var(--ws-border); }
+      .border-border { border-color: var(--ws-border); }
+      .ring-border { --tw-ring-color: var(--ws-border); }
+      .bg-input { background-color: var(--ws-input); }
+      .text-input { color: var(--ws-input); }
+      .border-input { border-color: var(--ws-input); }
+      .ring-input { --tw-ring-color: var(--ws-input); }
+      .bg-ring { background-color: var(--ws-ring); }
+      .text-ring { color: var(--ws-ring); }
+      .border-ring { border-color: var(--ws-ring); }
+      .ring-ring { --tw-ring-color: var(--ws-ring); }
+    </style>
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      [data-icon] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: currentColor;
+      }
+    </style>
+</head>
+<body class="min-h-screen font-sans antialiased">
+    <main>
+    </main>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+{
+  "nodeId": "gen-project-shell",
+  "kind": "project-shell",
+  "pageIds": [],
+  "output": "partials/shared-shell.html",
+  "sharedRegions": [
+    "bottom-nav",
+    "safe-area",
+    "page-frame"
+  ],
+  "privateRegions": [],
+  "mutableSlots": [
+    "activeNavItem",
+    "pageContent"
+  ],
+  "status": "completed",
+  "children": [
+    {
+      "nodeId": "gen-shared-shell-storybook",
+      "kind": "shared-branch",
+      "pageIds": [],
+      "output": "partials/shared-shell-storybook.html",
+      "sharedRegions": [
+        "bottom-nav",
+        "safe-area",
+        "page-frame",
+        "storybook-css"
+      ],
+      "privateRegions": [],
+      "mutableSlots": [
+        "activeNavItem",
+        "pageContent"
+      ],
+      "status": "completed",
+      "children": [
+        {
+          "nodeId": "gen-page-voice-guide",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-voice-guide"
+          ],
+          "output": "pages/voice-guide.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-home",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-home"
+          ],
+          "output": "pages/home.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-map",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-map"
+          ],
+          "output": "pages/map.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-quiz-question",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-quiz-question"
+          ],
+          "output": "pages/quiz-question.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-quiz-correct",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-quiz-correct"
+          ],
+          "output": "pages/quiz-correct.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-quiz-wrong",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-quiz-wrong"
+          ],
+          "output": "pages/quiz-wrong.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-quiz-complete",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-quiz-complete"
+          ],
+          "output": "pages/quiz-complete.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-battle-lobby",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-battle-lobby"
+          ],
+          "output": "pages/battle-lobby.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-battle-play",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-battle-play"
+          ],
+          "output": "pages/battle-play.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-battle-result",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-battle-result"
+          ],
+          "output": "pages/battle-result.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-collection-characters",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-collection-characters"
+          ],
+          "output": "pages/collection-characters.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-collection-badges",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-collection-badges"
+          ],
+          "output": "pages/collection-badges.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-collection-unlock",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-collection-unlock"
+          ],
+          "output": "pages/collection-unlock.html",
+          "status": "planned",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+.codex-runtime/
+wordspire-app/.next-startup-stale-*/
+.work/
+.DS_Store
+.claude/
+.trae/
+.trae-html-share-packages/
+.env*
+!.env.example
+node_modules/
+.next/
+.vercel/
+*.log
+*.tsbuildinfo
+
+# 教材下载原件保存在本机，题库数据及来源记录纳入版本管理。
+materials/textbooks/*/*.pdf
+materials/textbooks/*/*.zip
+materials/textbooks/*/pages/
+materials/textbooks/*/vocabulary-pdf-*/*.zip

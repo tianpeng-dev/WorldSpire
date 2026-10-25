@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-10-04T12:23:12+08:00",
+  "entry_count": 136,
+  "unique_english_count": 135,
+  "unit_counts": {
+    "1": 24,
+    "2": 26,
+    "3": 23,
+    "4": 18,
+    "5": 26,
+    "6": 19
+  },
+  "question_count": 136,
+  "stage_count": 16,
+  "repeated_headwords": [
+    {
+      "english": "have",
+      "unit_number": 2,
+      "meaning_zh": "有"
+    },
+    {
+      "english": "have",
+      "unit_number": 6,
+      "meaning_zh": "吃；喝"
+    }
+  ],
+  "source_page_sha256_verified": [
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100
+  ],
+  "generated_question_rules": "每条教材词语生成一道英文选中文词义的四选一题。选项来自该书词汇，排除同词的其他义项及释义重叠项。",
+  "normalization": [
+    "英文缩写使用 ASCII apostrophe；保留单词大小写及表达式标点。",
+    "中文释义统一空格和标点；milk 使用学生常用释义牛奶，soup 使用核心释义汤。"
+  ],
+  "verification_scope": "页面完整性、软件文字识别交叉核对及结构化数据校验。",
+  "database_validation": {
+    "engine": "PGlite 0.5.8",
+    "postgres_version": "PostgreSQL 18.3 (PGlite 0.5.8) on wasm32-unknown-emscripten, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit",
+    "schema_sources": [
+      {
+        "file": "wordspire-app/drizzle/0000_wordspire_base.sql",
+        "sha256": "95e9ad69b9da4270e8bc95f05e23a60cbab759bdfc467d1e71f5742b645dde07"
+      },
+      {
+        "file": "wordspire-app/drizzle/0001_backend_foundation.sql",
+        "sha256": "c446f3e0936745fe43dee05e1ed2a5ec9ad34b3be3034cdafb84983e5e4f2f98"
+      }
+    ],
+    "standalone_vocabulary_import": "passed",
+    "wordspire_schema_import": "passed",
+    "full_row_readback": "passed",
+    "repeat_import_idempotency": "passed",
+    "source_answer_join": "passed",
+    "contraction_roundtrip": "passed",
+    "multiple_senses_preserved": "passed",
+    "imported_rows": {
+      "vocabulary": 136,
+      "courses": 1,
+      "units": 6,
+      "stages": 16,
+      "questions": 136,
+      "question_sources": 136
+    },
+    "scope": "在本地隔离的实际 PostgreSQL 引擎中执行导入并读取结果。在线数据库和应用页面尚未执行导入验证。"
+  },
+  "live_database_imported": false,
+  "app_ui_verified": false
+}

@@ -1,0 +1,988 @@
+{
+  "data": [
+    {
+      "id": "page-voice-guide",
+      "title": "语音引导页",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788061200,
+      "canvasData": {
+        "x": 0,
+        "y": 0,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1366,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-f045c260",
+          "measuredAt": 1789891379752
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/voice-guide.html",
+        "interactions": [
+          {
+            "domId": "wg-start",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-home",
+      "title": "塔 · 首页",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788061201,
+      "canvasData": {
+        "x": 0,
+        "y": 4581,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1424,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-e25ad661",
+          "measuredAt": 1791079853299
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/home.html",
+        "interactions": []
+      }
+    },
+    {
+      "id": "page-home-v2",
+      "title": "塔 · 首页 · 行动版",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1789888569,
+      "canvasData": {
+        "x": 359,
+        "y": 0,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1366,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-8191a230",
+          "measuredAt": 1791079853299
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/home-v2.html",
+        "supersedesPageId": "page-home",
+        "interactions": [
+          {
+            "domId": "home-profile",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          },
+          {
+            "domId": "home-continue",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate"
+          },
+          {
+            "domId": "home-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-home",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-map",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-collection",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-report",
+      "title": "学习报告",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1789888570,
+      "canvasData": {
+        "x": 359,
+        "y": 4581,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1765,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-report",
+          "measuredAt": 1789888569001
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/report.html",
+        "interactions": [
+          {
+            "domId": "report-back",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-home",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-map",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-collection",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate",
+            "hideEdge": true
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-map",
+      "title": "闯关地图",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788061202,
+      "canvasData": {
+        "x": 359,
+        "y": 509,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1366,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-2736f666",
+          "measuredAt": 1789891379752
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/map.html",
+        "interactions": [
+          {
+            "domId": "map-stage-2",
+            "trigger": "click",
+            "targetPageId": "page-quiz-question",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-home",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-map",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-collection",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-quiz-question",
+      "title": "闯关游戏 · 答题中",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788061203,
+      "canvasData": {
+        "x": 0,
+        "y": 509,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1366,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-1bbfe463",
+          "measuredAt": 1789891379752
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/quiz-question.html",
+        "interactions": [
+          {
+            "domId": "opt-0",
+            "trigger": "click",
+            "targetPageId": "page-quiz-correct",
+            "type": "navigate"
+          },
+          {
+            "domId": "opt-1",
+            "trigger": "click",
+            "targetPageId": "page-quiz-wrong",
+            "type": "navigate"
+          },
+          {
+            "domId": "opt-2",
+            "trigger": "click",
+            "targetPageId": "page-quiz-wrong",
+            "type": "navigate"
+          },
+          {
+            "domId": "opt-3",
+            "trigger": "click",
+            "targetPageId": "page-quiz-wrong",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-home",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-map",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-collection",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-quiz-correct",
+      "title": "闯关游戏 · 答对反馈",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788061204,
+      "canvasData": {
+        "x": 0,
+        "y": 1018,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1366,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-45058b27",
+          "measuredAt": 1789891379752
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/quiz-correct.html",
+        "interactions": [
+          {
+            "domId": "correct-next",
+            "trigger": "click",
+            "targetPageId": "page-quiz-question",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-home",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-map",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-collection",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-quiz-wrong",
+      "title": "闯关游戏 · 答错鼓励",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788061205,
+      "canvasData": {
+        "x": 0,
+        "y": 3563,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1366,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-521e1ee1",
+          "measuredAt": 1788071803365
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/quiz-wrong.html",
+        "interactions": [
+          {
+            "domId": "wrong-retry",
+            "trigger": "click",
+            "targetPageId": "page-quiz-question",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-home",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-map",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-collection",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-quiz-complete",
+      "title": "闯关游戏 · 关卡结算",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788061206,
+      "canvasData": {
+        "x": 0,
+        "y": 4072,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1366,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-fd8f3f39",
+          "measuredAt": 1788071803365
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/quiz-complete.html",
+        "interactions": [
+          {
+            "domId": "complete-next",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate"
+          },
+          {
+            "domId": "complete-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-home",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-map",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-collection",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-battle-lobby",
+      "title": "对战大厅",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788061207,
+      "canvasData": {
+        "x": 359,
+        "y": 1018,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1366,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-1218f239",
+          "measuredAt": 1789891379752
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/battle-lobby.html",
+        "interactions": [
+          {
+            "domId": "lobby-ai-start",
+            "trigger": "click",
+            "targetPageId": "page-battle-play",
+            "type": "navigate"
+          },
+          {
+            "domId": "lobby-parent-accept",
+            "trigger": "click",
+            "targetPageId": "page-battle-play",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-home",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-map",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-collection",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-battle-play",
+      "title": "对战进行",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788061208,
+      "canvasData": {
+        "x": 0,
+        "y": 1527,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1366,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-184c7772",
+          "measuredAt": 1789891379752
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/battle-play.html",
+        "interactions": [
+          {
+            "domId": "b-opt-0",
+            "trigger": "click",
+            "targetPageId": "page-battle-result",
+            "type": "navigate"
+          },
+          {
+            "domId": "b-opt-1",
+            "trigger": "click",
+            "targetPageId": "page-battle-result",
+            "type": "navigate"
+          },
+          {
+            "domId": "b-opt-2",
+            "trigger": "click",
+            "targetPageId": "page-battle-result",
+            "type": "navigate"
+          },
+          {
+            "domId": "b-opt-3",
+            "trigger": "click",
+            "targetPageId": "page-battle-result",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-home",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-map",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-collection",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-battle-result",
+      "title": "对战结算",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788061209,
+      "canvasData": {
+        "x": 0,
+        "y": 2036,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1366,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-e917d8fe",
+          "measuredAt": 1789891379752
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/battle-result.html",
+        "interactions": [
+          {
+            "domId": "result-again",
+            "trigger": "click",
+            "targetPageId": "page-battle-play",
+            "type": "navigate"
+          },
+          {
+            "domId": "result-back",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-home",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-map",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-collection",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-collection-characters",
+      "title": "收藏图鉴 · 角色",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788061210,
+      "canvasData": {
+        "x": 359,
+        "y": 1527,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1366,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-ccdf2fff",
+          "measuredAt": 1789891379752
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/collection-characters.html",
+        "interactions": [
+          {
+            "domId": "chars-to-badges",
+            "trigger": "click",
+            "targetPageId": "page-collection-badges",
+            "type": "navigate"
+          },
+          {
+            "domId": "chars-grid",
+            "trigger": "click",
+            "targetPageId": "page-collection-unlock",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-home",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-map",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-collection",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-collection-badges",
+      "title": "收藏图鉴 · 徽章",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788061211,
+      "canvasData": {
+        "x": 0,
+        "y": 2545,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1366,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-f6a5edac",
+          "measuredAt": 1788071803365
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/collection-badges.html",
+        "interactions": [
+          {
+            "domId": "badges-to-chars",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-home",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-map",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-collection",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-collection-unlock",
+      "title": "收藏图鉴 · 解锁弹窗",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788061212,
+      "canvasData": {
+        "x": 0,
+        "y": 3054,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 1366,
+          "viewportWidth": 1024,
+          "sourceHash": "fnv1a-cdb43899",
+          "measuredAt": 1788071803365
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/collection-unlock.html",
+        "interactions": [
+          {
+            "domId": "unlock-confirm",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "unlock-cancel",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-home",
+            "trigger": "click",
+            "targetPageId": "page-home-v2",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-map",
+            "trigger": "click",
+            "targetPageId": "page-map",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-battle",
+            "trigger": "click",
+            "targetPageId": "page-battle-lobby",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-collection",
+            "trigger": "click",
+            "targetPageId": "page-collection-characters",
+            "type": "navigate"
+          },
+          {
+            "domId": "nav-report",
+            "trigger": "click",
+            "targetPageId": "page-report",
+            "type": "navigate",
+            "hideEdge": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "image-001",
+      "title": "童话绘本剪纸风主视觉",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1789886861,
+      "canvasData": {
+        "x": 0,
+        "y": 5206,
+        "naturalSize": {
+          "width": 1920,
+          "height": 2048
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hero-wordspire-storybook.jpg"
+      }
+    },
+    {
+      "id": "image-002",
+      "title": "词灵 mascot",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1789886862,
+      "canvasData": {
+        "x": 359,
+        "y": 5206,
+        "naturalSize": {
+          "width": 1920,
+          "height": 1920
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/mascot-word-spirit.jpg"
+      }
+    }
+  ],
+  "config": {
+    "autoLayout": true,
+    "deviceType": "tablet",
+    "projectName": "词灵塔儿童端UI原型",
+    "visualEditorEnabled": false
+  }
+}

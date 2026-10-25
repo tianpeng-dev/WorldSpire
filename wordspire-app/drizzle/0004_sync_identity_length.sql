@@ -1,0 +1,1 @@
+ALTER TABLE "sync_changes" ALTER COLUMN "entity_id" SET DATA TYPE varchar(160);

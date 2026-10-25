@@ -1,0 +1,382 @@
+{
+  "skillProvenance": {
+    "name": "solo-design",
+    "version": "1.0",
+    "version_source": "builtin"
+  },
+  "project": {
+    "name": "wordspire-child-ui-prototypes",
+    "displayName": "词灵塔儿童端UI原型",
+    "path": "/Users/peng/Documents/trae_projects/WordSpire/wordspire-child-ui-prototypes",
+    "deviceType": "tablet",
+    "viewportMode": "document-scroll",
+    "resolvedLane": "redesign_duplicate_project",
+    "language": "zh-CN",
+    "pageCount": 15,
+    "styleDefinitions": [
+      {
+        "slug": "storybook",
+        "name": "童话绘本剪纸风",
+        "cssFile": "colors_and_type-storybook.css",
+        "brief": "立体书剪纸词灵塔，温暖亲切安全感，赤陶橙主色，大圆角纸张层叠。"
+      }
+    ],
+    "designSource": {
+      "operatingMode": "free-explore",
+      "libraryIdentity": null
+    },
+    "styleConstraints": {
+      "radiusMax": 16,
+      "staticShadowAlphaMax": 0.05,
+      "singleBrandHue": true,
+      "noEmojiIcons": true
+    },
+    "cssPreflightEvidence": {
+      "storybook": "/Users/peng/Documents/trae_projects/WordSpire/wordspire-child-ui-prototypes/.preflight/preflight-storybook.html"
+    },
+    "generationTree": {
+      "nodeId": "wordspire-child-ui-prototypes-pc-draft",
+      "kind": "project-shell",
+      "pageIds": [],
+      "output": "partials/shared-shell.html",
+      "sharedRegions": [
+        "bottom-nav",
+        "safe-area",
+        "page-frame"
+      ],
+      "privateRegions": [],
+      "mutableSlots": [
+        "activeNavItem",
+        "pageContent"
+      ],
+      "status": "completed",
+      "children": [
+        {
+          "nodeId": "gen-page-voice-guide",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-voice-guide"
+          ],
+          "output": "pages/voice-guide.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-home",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-home"
+          ],
+          "output": "pages/home.html",
+          "status": "completed",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-home-v2",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-home-v2"
+          ],
+          "output": "pages/home-v2.html",
+          "status": "completed",
+          "derivationType": "comparison-from-source",
+          "sourcePageId": "page-home",
+          "sourceHtmlSrc": "pages/home.html",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-report",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-report"
+          ],
+          "output": "pages/report.html",
+          "status": "completed",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-map",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-map"
+          ],
+          "output": "pages/map.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-quiz-question",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-quiz-question"
+          ],
+          "output": "pages/quiz-question.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-quiz-correct",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-quiz-correct"
+          ],
+          "output": "pages/quiz-correct.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-quiz-wrong",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-quiz-wrong"
+          ],
+          "output": "pages/quiz-wrong.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-quiz-complete",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-quiz-complete"
+          ],
+          "output": "pages/quiz-complete.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-battle-lobby",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-battle-lobby"
+          ],
+          "output": "pages/battle-lobby.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-battle-play",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-battle-play"
+          ],
+          "output": "pages/battle-play.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-battle-result",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-battle-result"
+          ],
+          "output": "pages/battle-result.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-collection-characters",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-collection-characters"
+          ],
+          "output": "pages/collection-characters.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-collection-badges",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-collection-badges"
+          ],
+          "output": "pages/collection-badges.html",
+          "status": "planned",
+          "children": []
+        },
+        {
+          "nodeId": "gen-page-collection-unlock",
+          "kind": "page-leaf",
+          "pageIds": [
+            "page-collection-unlock"
+          ],
+          "output": "pages/collection-unlock.html",
+          "status": "planned",
+          "children": []
+        }
+      ]
+    },
+    "sharedProjectShellContract": {
+      "mobileNavigation": {
+        "applies": true,
+        "activeKey": "home",
+        "items": [
+          {
+            "key": "home",
+            "label": "首页",
+            "icon": "home"
+          },
+          {
+            "key": "map",
+            "label": "闯关",
+            "icon": "map"
+          },
+          {
+            "key": "battle",
+            "label": "对战",
+            "icon": "battle"
+          },
+          {
+            "key": "collection",
+            "label": "收藏",
+            "icon": "collection"
+          }
+        ]
+      }
+    },
+    "dispatchPreflightManifest": [
+      {
+        "nodeId": "page-home-v2",
+        "htmlSrc": "pages/home-v2.html",
+        "packetType": "ExistingEditPagePacket",
+        "allowedWritePaths": [
+          "pages/home-v2.html"
+        ],
+        "toolPolicy": {
+          "todoWriteAllowed": false,
+          "validationScriptsAllowed": false,
+          "previewAllowed": false,
+          "helperScriptsAllowed": false,
+          "designFileWriteAllowed": false
+        }
+      },
+      {
+        "nodeId": "page-report",
+        "htmlSrc": "pages/report.html",
+        "packetType": "ExistingEditPagePacket",
+        "allowedWritePaths": [
+          "pages/report.html"
+        ],
+        "toolPolicy": {
+          "todoWriteAllowed": false,
+          "validationScriptsAllowed": false,
+          "previewAllowed": false,
+          "helperScriptsAllowed": false,
+          "designFileWriteAllowed": false
+        }
+      }
+    ],
+    "selectedIntentWorkflowRead": true,
+    "contextRequirementsLoaded": [
+      {
+        "path": "intent-workflows/intent-project-mutation/INTENT_WORKFLOW.md",
+        "readStatus": "loaded",
+        "bodyRead": true
+      },
+      {
+        "path": "intent-workflows/intent-project-mutation/edit-existing-project.md",
+        "readStatus": "loaded",
+        "bodyRead": true
+      },
+      {
+        "path": "intent-workflows/intent-project-mutation/existing-edit-dispatch-contract.md",
+        "readStatus": "loaded",
+        "bodyRead": true
+      },
+      {
+        "path": "intent-workflows/intent-project-mutation/existing-edit-page-runtime.md",
+        "readStatus": "loaded",
+        "bodyRead": true
+      },
+      {
+        "path": "shared-runtime/agent-dispatch-runtime/shared-page-rendering-kernel.md",
+        "readStatus": "loaded",
+        "bodyRead": true
+      }
+    ],
+    "expectedDispatches": [
+      {
+        "nodeId": "page-home-v2",
+        "packetType": "ExistingEditPagePacket",
+        "status": "completed",
+        "changedFiles": [
+          "pages/home-v2.html"
+        ],
+        "toolCallLedger": {
+          "source": "main-agent-runtime-trace",
+          "traceDigest": "2e4e42df6d18a5cb2d4b8ade3b23412d",
+          "todoWriteCalls": 0,
+          "previewCalls": 0,
+          "validationScriptCalls": 0,
+          "helperScriptWrites": 0
+        }
+      },
+      {
+        "nodeId": "page-report",
+        "packetType": "ExistingEditPagePacket",
+        "status": "completed",
+        "changedFiles": [
+          "pages/report.html"
+        ],
+        "toolCallLedger": {
+          "source": "main-agent-runtime-trace",
+          "traceDigest": "02478281ca599e6fc2bb1bbe389c1266",
+          "todoWriteCalls": 0,
+          "previewCalls": 0,
+          "validationScriptCalls": 0,
+          "helperScriptWrites": 0
+        }
+      },
+      {
+        "nodeId": "pc-redesign-all-pages",
+        "packetType": "RedesignPagePacket",
+        "status": "completed",
+        "changedFiles": [
+          "pages/voice-guide.html",
+          "pages/home.html",
+          "pages/map.html",
+          "pages/quiz-question.html",
+          "pages/quiz-correct.html",
+          "pages/quiz-wrong.html",
+          "pages/quiz-complete.html",
+          "pages/battle-lobby.html",
+          "pages/battle-play.html",
+          "pages/battle-result.html",
+          "pages/collection-characters.html",
+          "pages/collection-badges.html",
+          "pages/collection-unlock.html"
+        ],
+        "toolCallLedger": {
+          "source": "main-agent-runtime-trace",
+          "traceDigest": "83a058f8291b649d286e7dda95dc7e55",
+          "todoWriteCalls": 0,
+          "previewCalls": 0,
+          "validationScriptCalls": 0,
+          "helperScriptWrites": 0
+        }
+      }
+    ],
+    "projectName": "wordspire-child-ui-prototypes-pc-draft",
+    "status": "completed",
+    "redesignAudit": {
+      "primaryIssue": "mobile/tablet layout does not use desktop space effectively",
+      "fixPriority": [
+        "pc-layout",
+        "sidebar-nav",
+        "content-scale"
+      ],
+      "preserve": [
+        "business copy",
+        "core navigation",
+        "existing assets",
+        "data-dom-ids"
+      ],
+      "change": [
+        "add fixed sidebar navigation",
+        "widen main content area",
+        "use grid layouts for cards"
+      ],
+      "risk": "do not break existing domIds"
+    }
+  }
+}

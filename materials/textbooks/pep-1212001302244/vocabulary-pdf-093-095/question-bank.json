@@ -1,0 +1,2538 @@
+{
+  "schema_version": 1,
+  "courses": [
+    {
+      "id": "pep3b_2244",
+      "kind": "vocab",
+      "title": "人教版英语（精通）三年级下册",
+      "unit_ids": [
+        "pep3b_2244_u1",
+        "pep3b_2244_u2",
+        "pep3b_2244_u3",
+        "pep3b_2244_u4",
+        "pep3b_2244_u5",
+        "pep3b_2244_u6"
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "pep3b_2244_u1",
+      "course_id": "pep3b_2244",
+      "title": "Unit 1",
+      "order": 1,
+      "stage_ids": [
+        "pep3b_2244_u1_s1",
+        "pep3b_2244_u1_s2",
+        "pep3b_2244_u1_s3"
+      ]
+    },
+    {
+      "id": "pep3b_2244_u2",
+      "course_id": "pep3b_2244",
+      "title": "Unit 2",
+      "order": 2,
+      "stage_ids": [
+        "pep3b_2244_u2_s1",
+        "pep3b_2244_u2_s2"
+      ]
+    },
+    {
+      "id": "pep3b_2244_u3",
+      "course_id": "pep3b_2244",
+      "title": "Unit 3",
+      "order": 3,
+      "stage_ids": [
+        "pep3b_2244_u3_s1",
+        "pep3b_2244_u3_s2"
+      ]
+    },
+    {
+      "id": "pep3b_2244_u4",
+      "course_id": "pep3b_2244",
+      "title": "Unit 4",
+      "order": 4,
+      "stage_ids": [
+        "pep3b_2244_u4_s1",
+        "pep3b_2244_u4_s2"
+      ]
+    },
+    {
+      "id": "pep3b_2244_u5",
+      "course_id": "pep3b_2244",
+      "title": "Unit 5",
+      "order": 5,
+      "stage_ids": [
+        "pep3b_2244_u5_s1",
+        "pep3b_2244_u5_s2",
+        "pep3b_2244_u5_s3"
+      ]
+    },
+    {
+      "id": "pep3b_2244_u6",
+      "course_id": "pep3b_2244",
+      "title": "Unit 6",
+      "order": 6,
+      "stage_ids": [
+        "pep3b_2244_u6_s1",
+        "pep3b_2244_u6_s2"
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "id": "pep3b_2244_u1_s1",
+      "unit_id": "pep3b_2244_u1",
+      "title": "Unit 1 · 词义练习 1",
+      "order": 1,
+      "points_reward": 5
+    },
+    {
+      "id": "pep3b_2244_u1_s2",
+      "unit_id": "pep3b_2244_u1",
+      "title": "Unit 1 · 词义练习 2",
+      "order": 2,
+      "points_reward": 5
+    },
+    {
+      "id": "pep3b_2244_u1_s3",
+      "unit_id": "pep3b_2244_u1",
+      "title": "Unit 1 · 词义练习 3",
+      "order": 3,
+      "points_reward": 5
+    },
+    {
+      "id": "pep3b_2244_u2_s1",
+      "unit_id": "pep3b_2244_u2",
+      "title": "Unit 2 · 词义练习 1",
+      "order": 1,
+      "points_reward": 5
+    },
+    {
+      "id": "pep3b_2244_u2_s2",
+      "unit_id": "pep3b_2244_u2",
+      "title": "Unit 2 · 词义练习 2",
+      "order": 2,
+      "points_reward": 5
+    },
+    {
+      "id": "pep3b_2244_u3_s1",
+      "unit_id": "pep3b_2244_u3",
+      "title": "Unit 3 · 词义练习 1",
+      "order": 1,
+      "points_reward": 5
+    },
+    {
+      "id": "pep3b_2244_u3_s2",
+      "unit_id": "pep3b_2244_u3",
+      "title": "Unit 3 · 词义练习 2",
+      "order": 2,
+      "points_reward": 5
+    },
+    {
+      "id": "pep3b_2244_u4_s1",
+      "unit_id": "pep3b_2244_u4",
+      "title": "Unit 4 · 词义练习 1",
+      "order": 1,
+      "points_reward": 5
+    },
+    {
+      "id": "pep3b_2244_u4_s2",
+      "unit_id": "pep3b_2244_u4",
+      "title": "Unit 4 · 词义练习 2",
+      "order": 2,
+      "points_reward": 5
+    },
+    {
+      "id": "pep3b_2244_u5_s1",
+      "unit_id": "pep3b_2244_u5",
+      "title": "Unit 5 · 词义练习 1",
+      "order": 1,
+      "points_reward": 5
+    },
+    {
+      "id": "pep3b_2244_u5_s2",
+      "unit_id": "pep3b_2244_u5",
+      "title": "Unit 5 · 词义练习 2",
+      "order": 2,
+      "points_reward": 5
+    },
+    {
+      "id": "pep3b_2244_u5_s3",
+      "unit_id": "pep3b_2244_u5",
+      "title": "Unit 5 · 词义练习 3",
+      "order": 3,
+      "points_reward": 5
+    },
+    {
+      "id": "pep3b_2244_u6_s1",
+      "unit_id": "pep3b_2244_u6",
+      "title": "Unit 6 · 词义练习 1",
+      "order": 1,
+      "points_reward": 5
+    },
+    {
+      "id": "pep3b_2244_u6_s2",
+      "unit_id": "pep3b_2244_u6",
+      "title": "Unit 6 · 词义练习 2",
+      "order": 2,
+      "points_reward": 5
+    }
+  ],
+  "questions": [
+    {
+      "id": "pep3b_2244_q001",
+      "stage_id": "pep3b_2244_u1_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "in",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "在……内；在……中",
+        "椅子",
+        "打扫",
+        "在……下面"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q002",
+      "stage_id": "pep3b_2244_u1_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "on",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "帮助",
+        "在……上",
+        "计算机；电脑",
+        "教室；课堂"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q003",
+      "stage_id": "pep3b_2244_u1_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "under",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "书；书籍",
+        "帮助",
+        "在……下面",
+        "今天"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q004",
+      "stage_id": "pep3b_2244_u1_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "box",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "在……内；在……中",
+        "地板；地面",
+        "门",
+        "盒；箱"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q005",
+      "stage_id": "pep3b_2244_u1_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "chair",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "椅子",
+        "地板；地面",
+        "优秀的；杰出的",
+        "教室；课堂"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q006",
+      "stage_id": "pep3b_2244_u1_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "computer",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "爱；热爱",
+        "计算机；电脑",
+        "地板；地面",
+        "门"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q007",
+      "stage_id": "pep3b_2244_u1_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "desk",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "在……上",
+        "爱；热爱",
+        "书桌",
+        "教室；课堂"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q008",
+      "stage_id": "pep3b_2244_u1_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "blackboard",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "椅子",
+        "许多",
+        "计算机；电脑",
+        "黑板"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q009",
+      "stage_id": "pep3b_2244_u1_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "classroom",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "教室；课堂",
+        "帮助",
+        "打扫",
+        "今天"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q010",
+      "stage_id": "pep3b_2244_u1_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "door",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "机会",
+        "门",
+        "教室；课堂",
+        "在……内；在……中"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q011",
+      "stage_id": "pep3b_2244_u1_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "floor",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "书；书籍",
+        "帮助",
+        "地板；地面",
+        "门"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q012",
+      "stage_id": "pep3b_2244_u1_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "wall",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "椅子",
+        "窗；窗户",
+        "在……下面",
+        "墙；壁；墙壁"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q013",
+      "stage_id": "pep3b_2244_u1_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "window",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "窗；窗户",
+        "计算机；电脑",
+        "机会",
+        "盒；箱"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q014",
+      "stage_id": "pep3b_2244_u1_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "guess",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "窗；窗户",
+        "猜测",
+        "椅子",
+        "在……下面"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q015",
+      "stage_id": "pep3b_2244_u1_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "many",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "椅子",
+        "盒；箱",
+        "许多",
+        "猜测"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q016",
+      "stage_id": "pep3b_2244_u1_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "book",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "黑板",
+        "猜测",
+        "在……内；在……中",
+        "书；书籍"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q017",
+      "stage_id": "pep3b_2244_u1_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "love",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "爱；热爱",
+        "帮助",
+        "门",
+        "椅子"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q018",
+      "stage_id": "pep3b_2244_u1_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "dirty",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "黑板",
+        "脏的",
+        "地板；地面",
+        "椅子"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q019",
+      "stage_id": "pep3b_2244_u1_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "clean",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "计算机；电脑",
+        "椅子",
+        "打扫",
+        "在……下面"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q020",
+      "stage_id": "pep3b_2244_u1_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "help",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "椅子",
+        "爱；热爱",
+        "今天",
+        "帮助"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q021",
+      "stage_id": "pep3b_2244_u1_s3",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "great",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "优秀的；杰出的",
+        "打扫",
+        "计算机；电脑",
+        "帮助"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q022",
+      "stage_id": "pep3b_2244_u1_s3",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "today",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "墙；壁；墙壁",
+        "今天",
+        "打扫",
+        "计算机；电脑"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q023",
+      "stage_id": "pep3b_2244_u1_s3",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "turn",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "优秀的；杰出的",
+        "在……下面",
+        "机会",
+        "黑板"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q024",
+      "stage_id": "pep3b_2244_u2_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "one",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "学生",
+        "十",
+        "年级",
+        "一"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q025",
+      "stage_id": "pep3b_2244_u2_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "two",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "二",
+        "一",
+        "五",
+        "学生"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q026",
+      "stage_id": "pep3b_2244_u2_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "three",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "年级",
+        "三",
+        "一",
+        "四"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q027",
+      "stage_id": "pep3b_2244_u2_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "four",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "八",
+        "十一",
+        "四",
+        "十二"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q028",
+      "stage_id": "pep3b_2244_u2_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "five",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "十一",
+        "十",
+        "学生",
+        "五"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q029",
+      "stage_id": "pep3b_2244_u2_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "six",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "六",
+        "年级",
+        "十二",
+        "八"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q030",
+      "stage_id": "pep3b_2244_u2_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "seven",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "哪一个",
+        "七",
+        "年级",
+        "十二"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q031",
+      "stage_id": "pep3b_2244_u2_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "eight",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "十一",
+        "年级",
+        "八",
+        "十二"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q032",
+      "stage_id": "pep3b_2244_u2_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "nine",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "六",
+        "一",
+        "四",
+        "九"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q033",
+      "stage_id": "pep3b_2244_u2_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "ten",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "十",
+        "学生",
+        "八",
+        "班；班级"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q034",
+      "stage_id": "pep3b_2244_u2_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "eleven",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "五",
+        "十一",
+        "四",
+        "十二"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q035",
+      "stage_id": "pep3b_2244_u2_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "twelve",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "三",
+        "年级",
+        "十二",
+        "八"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q036",
+      "stage_id": "pep3b_2244_u2_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "class",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "哪一个",
+        "十",
+        "四",
+        "班；班级"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q037",
+      "stage_id": "pep3b_2244_u2_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "which",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "哪一个",
+        "班；班级",
+        "二",
+        "十二"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q038",
+      "stage_id": "pep3b_2244_u2_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "grade",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "六",
+        "年级",
+        "七",
+        "一"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q039",
+      "stage_id": "pep3b_2244_u2_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "student",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "年级",
+        "三",
+        "学生",
+        "七"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q040",
+      "stage_id": "pep3b_2244_u2_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "school",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "四",
+        "年级",
+        "六",
+        "学校"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q041",
+      "stage_id": "pep3b_2244_u2_s2",
+      "type": "meaning_match",
+      "difficulty": 2,
+      "target_word": "Well done!",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "做得好！",
+        "九",
+        "三",
+        "四"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q042",
+      "stage_id": "pep3b_2244_u3_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "father",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "美丽的",
+        "父亲；爸爸",
+        "谁",
+        "舅父；叔父；伯父；姑父；姨父"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q043",
+      "stage_id": "pep3b_2244_u3_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "mother",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "婴儿",
+        "舅父；叔父；伯父；姑父；姨父",
+        "母亲；妈妈",
+        "哥哥；弟弟"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q044",
+      "stage_id": "pep3b_2244_u3_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "baby",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "姑母；姨母；伯母；婶母；舅母",
+        "母亲；妈妈",
+        "女儿",
+        "婴儿"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q045",
+      "stage_id": "pep3b_2244_u3_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "brother",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "哥哥；弟弟",
+        "姑母；姨母；伯母；婶母；舅母",
+        "儿子",
+        "（外）祖母；奶奶；姥姥；外婆"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q046",
+      "stage_id": "pep3b_2244_u3_s1",
+      "type": "meaning_match",
+      "difficulty": 2,
+      "target_word": "baby brother",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "非常",
+        "弟弟",
+        "（外）祖母；奶奶；姥姥；外婆",
+        "（外）祖父；爷爷；姥爷；外公"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q047",
+      "stage_id": "pep3b_2244_u3_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "sister",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "那；那个",
+        "儿子",
+        "姐姐；妹妹",
+        "舅父；叔父；伯父；姑父；姨父"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q048",
+      "stage_id": "pep3b_2244_u3_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "me",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "女儿",
+        "父亲；爸爸",
+        "（外）祖父；爷爷；姥爷；外公",
+        "我"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q049",
+      "stage_id": "pep3b_2244_u3_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "aunt",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "姑母；姨母；伯母；婶母；舅母",
+        "哥哥；弟弟",
+        "婴儿",
+        "美丽的"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q050",
+      "stage_id": "pep3b_2244_u3_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "uncle",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "那；那个",
+        "舅父；叔父；伯父；姑父；姨父",
+        "我",
+        "姑母；姨母；伯母；婶母；舅母"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q051",
+      "stage_id": "pep3b_2244_u3_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "grandfather",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "儿子",
+        "母亲；妈妈",
+        "（外）祖父；爷爷；姥爷；外公",
+        "我"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q052",
+      "stage_id": "pep3b_2244_u3_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "grandmother",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "女儿",
+        "婴儿",
+        "儿子",
+        "（外）祖母；奶奶；姥姥；外婆"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q053",
+      "stage_id": "pep3b_2244_u3_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "family",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "家；家庭",
+        "谁",
+        "姐姐；妹妹",
+        "（外）祖母；奶奶；姥姥；外婆"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q054",
+      "stage_id": "pep3b_2244_u3_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "son",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "美丽的",
+        "儿子",
+        "相遇；遇见",
+        "（外）祖父；爷爷；姥爷；外公"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q055",
+      "stage_id": "pep3b_2244_u3_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "meet",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "女儿",
+        "家；家庭",
+        "相遇；遇见",
+        "儿子"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q056",
+      "stage_id": "pep3b_2244_u3_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "that",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "女儿",
+        "父亲；爸爸",
+        "婴儿",
+        "那；那个"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q057",
+      "stage_id": "pep3b_2244_u3_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "daughter",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "女儿",
+        "哥哥；弟弟",
+        "婴儿",
+        "姐姐；妹妹"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q058",
+      "stage_id": "pep3b_2244_u3_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "who",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "那；那个",
+        "谁",
+        "我",
+        "相遇；遇见"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q059",
+      "stage_id": "pep3b_2244_u3_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "beautiful",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "婴儿",
+        "母亲；妈妈",
+        "美丽的",
+        "哥哥；弟弟"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q060",
+      "stage_id": "pep3b_2244_u3_s2",
+      "type": "meaning_match",
+      "difficulty": 2,
+      "target_word": "very much",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "弟弟",
+        "我",
+        "美丽的",
+        "非常"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q061",
+      "stage_id": "pep3b_2244_u4_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "cap",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "便帽；制服帽",
+        "衬衫",
+        "衣服；服装",
+        "女裙"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q062",
+      "stage_id": "pep3b_2244_u4_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "coat",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "鞋",
+        "外套；外衣；大衣",
+        "裤子",
+        "家；住所"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q063",
+      "stage_id": "pep3b_2244_u4_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "shirt",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "套头衫；套头毛衣",
+        "有用的；有帮助的",
+        "衬衫",
+        "鞋"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q064",
+      "stage_id": "pep3b_2244_u4_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "sweater",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "裤子",
+        "衣服；服装",
+        "女裙",
+        "套头衫；套头毛衣"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q065",
+      "stage_id": "pep3b_2244_u4_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "T-shirt",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "T恤衫",
+        "鞋",
+        "连衣裙",
+        "便帽；制服帽"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q066",
+      "stage_id": "pep3b_2244_u4_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "dress",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "外套；外衣；大衣",
+        "连衣裙",
+        "衬衫",
+        "女裙"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q067",
+      "stage_id": "pep3b_2244_u4_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "shorts",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "外套；外衣；大衣",
+        "有用的；有帮助的",
+        "短裤",
+        "短袜"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q068",
+      "stage_id": "pep3b_2244_u4_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "skirt",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "连衣裙",
+        "裤子",
+        "外套；外衣；大衣",
+        "女裙"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q069",
+      "stage_id": "pep3b_2244_u4_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "sock",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "短袜",
+        "便帽；制服帽",
+        "连衣裙",
+        "携带；拿走；取走"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q070",
+      "stage_id": "pep3b_2244_u4_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "trousers",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "连衣裙",
+        "裤子",
+        "短裤",
+        "短袜"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q071",
+      "stage_id": "pep3b_2244_u4_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "clothes",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "有用的；有帮助的",
+        "洗",
+        "衣服；服装",
+        "女裙"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q072",
+      "stage_id": "pep3b_2244_u4_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "take",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "洗",
+        "鞋",
+        "衬衫",
+        "携带；拿走；取走"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q073",
+      "stage_id": "pep3b_2244_u4_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "wash",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "洗",
+        "衣服；服装",
+        "女裙",
+        "短裤"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q074",
+      "stage_id": "pep3b_2244_u4_s2",
+      "type": "meaning_match",
+      "difficulty": 2,
+      "target_word": "by myself",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "用手",
+        "（我）独立地",
+        "有用的；有帮助的",
+        "裤子"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q075",
+      "stage_id": "pep3b_2244_u4_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "shoe",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "衣服；服装",
+        "便帽；制服帽",
+        "鞋",
+        "携带；拿走；取走"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q076",
+      "stage_id": "pep3b_2244_u4_s2",
+      "type": "meaning_match",
+      "difficulty": 2,
+      "target_word": "by hand",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "（我）独立地",
+        "携带；拿走；取走",
+        "女裙",
+        "用手"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q077",
+      "stage_id": "pep3b_2244_u4_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "helpful",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "有用的；有帮助的",
+        "套头衫；套头毛衣",
+        "鞋",
+        "女裙"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q078",
+      "stage_id": "pep3b_2244_u4_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "home",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "裤子",
+        "家；住所",
+        "衬衫",
+        "洗"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q079",
+      "stage_id": "pep3b_2244_u5_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "chicken",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "草",
+        "动物",
+        "鸡",
+        "蜜蜂"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q080",
+      "stage_id": "pep3b_2244_u5_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "cow",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "鸟",
+        "马",
+        "正确的",
+        "母牛；奶牛"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q081",
+      "stage_id": "pep3b_2244_u5_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "duck",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "鸭",
+        "母牛；奶牛",
+        "在这里；向这里",
+        "老鼠"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q082",
+      "stage_id": "pep3b_2244_u5_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "horse",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "绵羊",
+        "马",
+        "草",
+        "树；树木"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q083",
+      "stage_id": "pep3b_2244_u5_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "sheep",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "鱼",
+        "在这里；向这里",
+        "绵羊",
+        "树；树木"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q084",
+      "stage_id": "pep3b_2244_u5_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "bee",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "树；树木",
+        "鱼",
+        "老鼠",
+        "蜜蜂"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q085",
+      "stage_id": "pep3b_2244_u5_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "bird",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "鸟",
+        "正确的",
+        "树；树木",
+        "母牛；奶牛"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q086",
+      "stage_id": "pep3b_2244_u5_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "fish",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "哪里",
+        "鱼",
+        "草",
+        "重的；沉的"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q087",
+      "stage_id": "pep3b_2244_u5_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "mouse",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "绵羊",
+        "鸭",
+        "老鼠",
+        "给；交给"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q088",
+      "stage_id": "pep3b_2244_u5_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "pig",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "母牛；奶牛",
+        "正确的",
+        "马",
+        "猪"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q089",
+      "stage_id": "pep3b_2244_u5_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "rabbit",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "兔子",
+        "草",
+        "蜜蜂",
+        "老鼠"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q090",
+      "stage_id": "pep3b_2244_u5_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "animal",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "马",
+        "动物",
+        "树；树木",
+        "在这里；向这里"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q091",
+      "stage_id": "pep3b_2244_u5_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "kid",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "马",
+        "鸡",
+        "小孩",
+        "树；树木"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q092",
+      "stage_id": "pep3b_2244_u5_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "here",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "绵羊",
+        "树；树木",
+        "鱼",
+        "在这里；向这里"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q093",
+      "stage_id": "pep3b_2244_u5_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "right",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "正确的",
+        "鸭",
+        "动物",
+        "重的；沉的"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q094",
+      "stage_id": "pep3b_2244_u5_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "where",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "鸭",
+        "哪里",
+        "给；交给",
+        "绵羊"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q095",
+      "stage_id": "pep3b_2244_u5_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "tree",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "猪",
+        "马",
+        "树；树木",
+        "鸡"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q096",
+      "stage_id": "pep3b_2244_u5_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "heavy",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "给；交给",
+        "小孩",
+        "哪里",
+        "重的；沉的"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q097",
+      "stage_id": "pep3b_2244_u5_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "grass",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "草",
+        "老鼠",
+        "我们",
+        "兔子"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q098",
+      "stage_id": "pep3b_2244_u5_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "give",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "蜜蜂",
+        "给；交给",
+        "我们",
+        "马"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q099",
+      "stage_id": "pep3b_2244_u5_s3",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "us",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "蜜蜂",
+        "母牛；奶牛",
+        "我们",
+        "重的；沉的"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q100",
+      "stage_id": "pep3b_2244_u6_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "blue",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "红色的",
+        "白色的",
+        "梦想；理想",
+        "蓝色的"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q101",
+      "stage_id": "pep3b_2244_u6_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "brown",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "棕色的；褐色的",
+        "蓝色的",
+        "红色的",
+        "花园；果园；菜园"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q102",
+      "stage_id": "pep3b_2244_u6_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "green",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "红色的",
+        "绿色的",
+        "蓝色的",
+        "花园；果园；菜园"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q103",
+      "stage_id": "pep3b_2244_u6_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "pink",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "绿色的",
+        "颜色；为……着色",
+        "粉色的",
+        "蓝色的"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q104",
+      "stage_id": "pep3b_2244_u6_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "red",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "花园；果园；菜园",
+        "梦想；理想",
+        "棕色的；褐色的",
+        "红色的"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q105",
+      "stage_id": "pep3b_2244_u6_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "black",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "黑色的",
+        "白色的",
+        "粉色的",
+        "蓝色的"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q106",
+      "stage_id": "pep3b_2244_u6_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "orange",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "粉色的",
+        "橙色的",
+        "白色的",
+        "梦想；理想"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q107",
+      "stage_id": "pep3b_2244_u6_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "white",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "蓝色的",
+        "花园；果园；菜园",
+        "白色的",
+        "粉色的"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q108",
+      "stage_id": "pep3b_2244_u6_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "yellow",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "黑色的",
+        "粉色的",
+        "白色的",
+        "黄色的"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pep3b_2244_q109",
+      "stage_id": "pep3b_2244_u6_s1",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "colour",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "颜色；为……着色",
+        "绿色的",
+        "梦想；理想",
+        "黑色的"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pep3b_2244_q110",
+      "stage_id": "pep3b_2244_u6_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "draw",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "梦想；理想",
+        "画",
+        "颜色；为……着色",
+        "红色的"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pep3b_2244_q111",
+      "stage_id": "pep3b_2244_u6_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "dream",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "花园；果园；菜园",
+        "棕色的；褐色的",
+        "梦想；理想",
+        "颜色；为……着色"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pep3b_2244_q112",
+      "stage_id": "pep3b_2244_u6_s2",
+      "type": "meaning_match",
+      "difficulty": 1,
+      "target_word": "garden",
+      "prompt_audio_url": null,
+      "image_asset_url": null,
+      "options": [
+        "红色的",
+        "画",
+        "梦想；理想",
+        "花园；果园；菜园"
+      ],
+      "correct_index": 3
+    }
+  ],
+  "question_sources": [
+    {
+      "id": "pep3b_2244_q001",
+      "vocabulary_id": "pep3b_2244_v001",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q002",
+      "vocabulary_id": "pep3b_2244_v002",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q003",
+      "vocabulary_id": "pep3b_2244_v003",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q004",
+      "vocabulary_id": "pep3b_2244_v004",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q005",
+      "vocabulary_id": "pep3b_2244_v005",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q006",
+      "vocabulary_id": "pep3b_2244_v006",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q007",
+      "vocabulary_id": "pep3b_2244_v007",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q008",
+      "vocabulary_id": "pep3b_2244_v008",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q009",
+      "vocabulary_id": "pep3b_2244_v009",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q010",
+      "vocabulary_id": "pep3b_2244_v010",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q011",
+      "vocabulary_id": "pep3b_2244_v011",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q012",
+      "vocabulary_id": "pep3b_2244_v012",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q013",
+      "vocabulary_id": "pep3b_2244_v013",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q014",
+      "vocabulary_id": "pep3b_2244_v014",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q015",
+      "vocabulary_id": "pep3b_2244_v015",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q016",
+      "vocabulary_id": "pep3b_2244_v016",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q017",
+      "vocabulary_id": "pep3b_2244_v017",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q018",
+      "vocabulary_id": "pep3b_2244_v018",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q019",
+      "vocabulary_id": "pep3b_2244_v019",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q020",
+      "vocabulary_id": "pep3b_2244_v020",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q021",
+      "vocabulary_id": "pep3b_2244_v021",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q022",
+      "vocabulary_id": "pep3b_2244_v022",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q023",
+      "vocabulary_id": "pep3b_2244_v023",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q024",
+      "vocabulary_id": "pep3b_2244_v024",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q025",
+      "vocabulary_id": "pep3b_2244_v025",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q026",
+      "vocabulary_id": "pep3b_2244_v026",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q027",
+      "vocabulary_id": "pep3b_2244_v027",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q028",
+      "vocabulary_id": "pep3b_2244_v028",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q029",
+      "vocabulary_id": "pep3b_2244_v029",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q030",
+      "vocabulary_id": "pep3b_2244_v030",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q031",
+      "vocabulary_id": "pep3b_2244_v031",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q032",
+      "vocabulary_id": "pep3b_2244_v032",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q033",
+      "vocabulary_id": "pep3b_2244_v033",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q034",
+      "vocabulary_id": "pep3b_2244_v034",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q035",
+      "vocabulary_id": "pep3b_2244_v035",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q036",
+      "vocabulary_id": "pep3b_2244_v036",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q037",
+      "vocabulary_id": "pep3b_2244_v037",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q038",
+      "vocabulary_id": "pep3b_2244_v038",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q039",
+      "vocabulary_id": "pep3b_2244_v039",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q040",
+      "vocabulary_id": "pep3b_2244_v040",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q041",
+      "vocabulary_id": "pep3b_2244_v041",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q042",
+      "vocabulary_id": "pep3b_2244_v042",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q043",
+      "vocabulary_id": "pep3b_2244_v043",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q044",
+      "vocabulary_id": "pep3b_2244_v044",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q045",
+      "vocabulary_id": "pep3b_2244_v045",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q046",
+      "vocabulary_id": "pep3b_2244_v046",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q047",
+      "vocabulary_id": "pep3b_2244_v047",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q048",
+      "vocabulary_id": "pep3b_2244_v048",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q049",
+      "vocabulary_id": "pep3b_2244_v049",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q050",
+      "vocabulary_id": "pep3b_2244_v050",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q051",
+      "vocabulary_id": "pep3b_2244_v051",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q052",
+      "vocabulary_id": "pep3b_2244_v052",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q053",
+      "vocabulary_id": "pep3b_2244_v053",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q054",
+      "vocabulary_id": "pep3b_2244_v054",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q055",
+      "vocabulary_id": "pep3b_2244_v055",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q056",
+      "vocabulary_id": "pep3b_2244_v056",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q057",
+      "vocabulary_id": "pep3b_2244_v057",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q058",
+      "vocabulary_id": "pep3b_2244_v058",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q059",
+      "vocabulary_id": "pep3b_2244_v059",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q060",
+      "vocabulary_id": "pep3b_2244_v060",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q061",
+      "vocabulary_id": "pep3b_2244_v061",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q062",
+      "vocabulary_id": "pep3b_2244_v062",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q063",
+      "vocabulary_id": "pep3b_2244_v063",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q064",
+      "vocabulary_id": "pep3b_2244_v064",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q065",
+      "vocabulary_id": "pep3b_2244_v065",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q066",
+      "vocabulary_id": "pep3b_2244_v066",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q067",
+      "vocabulary_id": "pep3b_2244_v067",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q068",
+      "vocabulary_id": "pep3b_2244_v068",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q069",
+      "vocabulary_id": "pep3b_2244_v069",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q070",
+      "vocabulary_id": "pep3b_2244_v070",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q071",
+      "vocabulary_id": "pep3b_2244_v071",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q072",
+      "vocabulary_id": "pep3b_2244_v072",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q073",
+      "vocabulary_id": "pep3b_2244_v073",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q074",
+      "vocabulary_id": "pep3b_2244_v074",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q075",
+      "vocabulary_id": "pep3b_2244_v075",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q076",
+      "vocabulary_id": "pep3b_2244_v076",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q077",
+      "vocabulary_id": "pep3b_2244_v077",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q078",
+      "vocabulary_id": "pep3b_2244_v078",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q079",
+      "vocabulary_id": "pep3b_2244_v079",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q080",
+      "vocabulary_id": "pep3b_2244_v080",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q081",
+      "vocabulary_id": "pep3b_2244_v081",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q082",
+      "vocabulary_id": "pep3b_2244_v082",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q083",
+      "vocabulary_id": "pep3b_2244_v083",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q084",
+      "vocabulary_id": "pep3b_2244_v084",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q085",
+      "vocabulary_id": "pep3b_2244_v085",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q086",
+      "vocabulary_id": "pep3b_2244_v086",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q087",
+      "vocabulary_id": "pep3b_2244_v087",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q088",
+      "vocabulary_id": "pep3b_2244_v088",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q089",
+      "vocabulary_id": "pep3b_2244_v089",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q090",
+      "vocabulary_id": "pep3b_2244_v090",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q091",
+      "vocabulary_id": "pep3b_2244_v091",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q092",
+      "vocabulary_id": "pep3b_2244_v092",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q093",
+      "vocabulary_id": "pep3b_2244_v093",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q094",
+      "vocabulary_id": "pep3b_2244_v094",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q095",
+      "vocabulary_id": "pep3b_2244_v095",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q096",
+      "vocabulary_id": "pep3b_2244_v096",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q097",
+      "vocabulary_id": "pep3b_2244_v097",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q098",
+      "vocabulary_id": "pep3b_2244_v098",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q099",
+      "vocabulary_id": "pep3b_2244_v099",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q100",
+      "vocabulary_id": "pep3b_2244_v100",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q101",
+      "vocabulary_id": "pep3b_2244_v101",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q102",
+      "vocabulary_id": "pep3b_2244_v102",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q103",
+      "vocabulary_id": "pep3b_2244_v103",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q104",
+      "vocabulary_id": "pep3b_2244_v104",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q105",
+      "vocabulary_id": "pep3b_2244_v105",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q106",
+      "vocabulary_id": "pep3b_2244_v106",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q107",
+      "vocabulary_id": "pep3b_2244_v107",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q108",
+      "vocabulary_id": "pep3b_2244_v108",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q109",
+      "vocabulary_id": "pep3b_2244_v109",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q110",
+      "vocabulary_id": "pep3b_2244_v110",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q111",
+      "vocabulary_id": "pep3b_2244_v111",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    },
+    {
+      "id": "pep3b_2244_q112",
+      "vocabulary_id": "pep3b_2244_v112",
+      "prompt_text": "请选择这个英文词语的中文意思。"
+    }
+  ]
+}

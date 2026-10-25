@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-04T12:17:47+08:00",
+  "official_page_count": 102,
+  "downloaded_pages": 102,
+  "decoded_images": 102,
+  "sha256_verified_images": 102,
+  "pdf_pages": 102,
+  "pdf_images_identical_to_source_jpeg": 102,
+  "page_order_complete": true,
+  "pdf_page_dimensions_match_source": true,
+  "identical_source_image_pages": [],
+  "pdf_sha256": "ed2ef8cb7da8b3e1ab8152df3af9a1d74448d19ff76ebb67a7131e1b9763200a",
+  "verification_methods": [
+    "官方配置页数核对",
+    "完整图片解码",
+    "SHA-256校验",
+    "逐页PDF内嵌JPEG原始数据比对",
+    "PDF页面比例与页面序号核对"
+  ]
+}

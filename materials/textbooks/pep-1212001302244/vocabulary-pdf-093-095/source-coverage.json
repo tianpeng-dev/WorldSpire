@@ -1,0 +1,786 @@
+[
+  {
+    "vocabulary_id": "pep3b_2244_v001",
+    "english": "in",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v002",
+    "english": "on",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v003",
+    "english": "under",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v004",
+    "english": "box",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v005",
+    "english": "chair",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v006",
+    "english": "computer",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v007",
+    "english": "desk",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v008",
+    "english": "blackboard",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v009",
+    "english": "classroom",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v010",
+    "english": "door",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v011",
+    "english": "floor",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v012",
+    "english": "wall",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v013",
+    "english": "window",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v014",
+    "english": "guess",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v015",
+    "english": "many",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v016",
+    "english": "book",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v017",
+    "english": "love",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v018",
+    "english": "dirty",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v019",
+    "english": "clean",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v020",
+    "english": "help",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v021",
+    "english": "great",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v022",
+    "english": "today",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v023",
+    "english": "turn",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v024",
+    "english": "one",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v025",
+    "english": "two",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v026",
+    "english": "three",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v027",
+    "english": "four",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v028",
+    "english": "five",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v029",
+    "english": "six",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v030",
+    "english": "seven",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v031",
+    "english": "eight",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v032",
+    "english": "nine",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v033",
+    "english": "ten",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v034",
+    "english": "eleven",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v035",
+    "english": "twelve",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v036",
+    "english": "class",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v037",
+    "english": "which",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v038",
+    "english": "grade",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v039",
+    "english": "student",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v040",
+    "english": "school",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v041",
+    "english": "Well done!",
+    "source_pdf_page": 93,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v042",
+    "english": "father",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v043",
+    "english": "mother",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v044",
+    "english": "baby",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v045",
+    "english": "brother",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v046",
+    "english": "baby brother",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v047",
+    "english": "sister",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v048",
+    "english": "me",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v049",
+    "english": "aunt",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v050",
+    "english": "uncle",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v051",
+    "english": "grandfather",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v052",
+    "english": "grandmother",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v053",
+    "english": "family",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v054",
+    "english": "son",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v055",
+    "english": "meet",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v056",
+    "english": "that",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v057",
+    "english": "daughter",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v058",
+    "english": "who",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v059",
+    "english": "beautiful",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v060",
+    "english": "very much",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v061",
+    "english": "cap",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v062",
+    "english": "coat",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v063",
+    "english": "shirt",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v064",
+    "english": "sweater",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v065",
+    "english": "T-shirt",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v066",
+    "english": "dress",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v067",
+    "english": "shorts",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v068",
+    "english": "skirt",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v069",
+    "english": "sock",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v070",
+    "english": "trousers",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v071",
+    "english": "clothes",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v072",
+    "english": "take",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v073",
+    "english": "wash",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v074",
+    "english": "by myself",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v075",
+    "english": "shoe",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v076",
+    "english": "by hand",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v077",
+    "english": "helpful",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v078",
+    "english": "home",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v079",
+    "english": "chicken",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v080",
+    "english": "cow",
+    "source_pdf_page": 94,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v081",
+    "english": "duck",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v082",
+    "english": "horse",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v083",
+    "english": "sheep",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v084",
+    "english": "bee",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v085",
+    "english": "bird",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v086",
+    "english": "fish",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v087",
+    "english": "mouse",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v088",
+    "english": "pig",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v089",
+    "english": "rabbit",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v090",
+    "english": "animal",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v091",
+    "english": "kid",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v092",
+    "english": "here",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v093",
+    "english": "right",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v094",
+    "english": "where",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v095",
+    "english": "tree",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v096",
+    "english": "heavy",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v097",
+    "english": "grass",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v098",
+    "english": "give",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v099",
+    "english": "us",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v100",
+    "english": "blue",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v101",
+    "english": "brown",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v102",
+    "english": "green",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v103",
+    "english": "pink",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v104",
+    "english": "red",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v105",
+    "english": "black",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v106",
+    "english": "orange",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v107",
+    "english": "white",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v108",
+    "english": "yellow",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v109",
+    "english": "colour",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v110",
+    "english": "draw",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v111",
+    "english": "dream",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  },
+  {
+    "vocabulary_id": "pep3b_2244_v112",
+    "english": "garden",
+    "source_pdf_page": 95,
+    "in_unit_vocabulary_ocr": true,
+    "in_alphabet_vocabulary_ocr": true
+  }
+]
