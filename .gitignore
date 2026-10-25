@@ -13,6 +13,14 @@ node_modules/
 *.log
 *.tsbuildinfo
 
+# 产品需求与界面设计资料。
+/wordspire-prd/
+/wordspire-requirements/
+/wordspire-requirements-v2/
+/wordspire-child-ui-prototypes/
+/wordspire-child-ui-prototypes-pc-draft/
+/wordspire-app/design-qa.md
+
 # 教材下载原件保存在本机，题库数据及来源记录纳入版本管理。
 materials/textbooks/*/*.pdf
 materials/textbooks/*/*.zip

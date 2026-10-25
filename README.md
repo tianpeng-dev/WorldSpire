@@ -5,10 +5,6 @@
 | 目录 | 内容 |
 | --- | --- |
 | [wordspire-app](wordspire-app) | Next.js 应用、数据库迁移、自动化测试及 Vercel 配置 |
-| [wordspire-prd](wordspire-prd) | 产品需求文档 |
-| [wordspire-requirements-v2](wordspire-requirements-v2) | 需求文档 |
-| [wordspire-child-ui-prototypes](wordspire-child-ui-prototypes) | 儿童端页面原型及设计源文件 |
-| [wordspire-child-ui-prototypes-pc-draft](wordspire-child-ui-prototypes-pc-draft) | 电脑端页面原型及设计源文件 |
 | [materials/textbooks](materials/textbooks) | 教材来源记录、词汇数据、题库及 SQL 文件 |
 
 ## 本地运行
