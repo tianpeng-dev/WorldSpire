@@ -75,7 +75,7 @@ HTTP 服务日志和测试结果位于忽略提交的 `.work/`。GitHub Actions 
 
 ## Vercel 配置
 
-Vercel 项目 Root Directory 设置为 `wordspire-app`，Node.js 版本使用 24。在对应环境中配置必需变量，`BETTER_AUTH_URL` 使用实际域名。发布前执行迁移与课程初始化。连接池在 Vercel 上接入 `attachDatabasePool`，以释放空闲连接。
+Vercel 项目 Root Directory 设置为 `wordspire-app`，Node.js 版本使用 24。在对应环境中配置必需变量，`BETTER_AUTH_URL` 使用实际域名，并启用系统环境变量。Vercel 生产构建在 Next.js 编译成功后、发布前执行数据库迁移，迁移失败会使构建失败。预览构建和本地构建跳过自动迁移。迁移须与仍在服务的版本兼容；新数据库的课程内容通过 `npm run db:seed` 初始化。连接池在 Vercel 上接入 `attachDatabasePool`，以释放空闲连接。
 
 运行版本由 `package.json` 和 Vercel 项目设置指定为 Node.js 24。`vercel.json` 配置每周周报和每日失活扫描，Cron 时间采用 UTC。两个接口检查 `Authorization: Bearer ${CRON_SECRET}`，以任务和周期避免重复执行，并保存每次执行状态及真实失败原因。
 
