@@ -19,6 +19,7 @@ import {
   bigint,
 } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
+import type { QuestionDTO } from "@/types";
 
 // ── 用户与关系 ───────────────────────────────────────────────────
 
@@ -296,6 +297,40 @@ export const battleRounds = pgTable(
     valuesCheck: check("battle_rounds_values_check", sql`${table.roundIndex} between 1 and 3 and ${table.score} >= 0 and ${table.latencyMs} between 0 and 120000`),
   })
 );
+
+export const duelRooms = pgTable("duel_rooms", {
+  id: varchar("id", { length: 21 }).primaryKey(),
+  hostId: varchar("host_id", { length: 21 }).notNull().references(() => childProfiles.id),
+  guestId: varchar("guest_id", { length: 21 }).references(() => childProfiles.id),
+  hostReady: boolean("host_ready").notNull().default(false),
+  guestReady: boolean("guest_ready").notNull().default(false),
+  hostSeenAt: timestamp("host_seen_at").notNull(),
+  guestSeenAt: timestamp("guest_seen_at"),
+  expiresAt: timestamp("expires_at").notNull(),
+  status: varchar("status", { length: 16 }).notNull().default("waiting"),
+  endedReason: varchar("ended_reason", { length: 24 }),
+  stageId: varchar("stage_id", { length: 21 }).notNull().references(() => stages.id),
+  questionPlan: json("question_plan").$type<{ question: QuestionDTO; correctIndex: number }[]>(),
+  roundIndex: integer("round_index").notNull().default(1),
+  roundStartedAt: timestamp("round_started_at"),
+  winnerId: varchar("winner_id", { length: 21 }).references(() => childProfiles.id),
+}, table => ({
+  participantsCheck: check("duel_rooms_participants_check", sql`${table.hostId} <> ${table.guestId}`),
+  statusCheck: check("duel_rooms_status_check", sql`${table.status} in ('waiting','playing','finished','closed')`),
+  roundCheck: check("duel_rooms_round_check", sql`${table.roundIndex} between 1 and 10`),
+}));
+
+export const duelAnswers = pgTable("duel_answers", {
+  roomId: varchar("room_id", { length: 21 }).notNull().references(() => duelRooms.id, { onDelete: "cascade" }),
+  playerId: varchar("player_id", { length: 21 }).notNull().references(() => childProfiles.id),
+  roundIndex: integer("round_index").notNull(),
+  optionId: text("option_id").notNull(),
+  latencyMs: integer("latency_ms").notNull(),
+  score: integer("score").notNull(),
+}, table => ({
+  uniqueAnswer: uniqueIndex("duel_answers_player_round_unq").on(table.roomId, table.roundIndex, table.playerId),
+  valuesCheck: check("duel_answers_values_check", sql`${table.roundIndex} between 1 and 10 and ${table.latencyMs} between 0 and 9999 and ${table.score} >= 0`),
+}));
 
 export const leaderboardEntries = pgTable(
   "leaderboard_entries",

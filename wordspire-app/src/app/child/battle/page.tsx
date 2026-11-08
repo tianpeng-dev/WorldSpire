@@ -23,6 +23,8 @@ export default function BattleLobbyPage() {
   const [lobby, setLobby] = useState<BattleLobbyDTO | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [starting, setStarting] = useState(false);
+  const [roomCode, setRoomCode] = useState("");
+  const [duelError, setDuelError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!ready) return;
@@ -50,13 +52,40 @@ export default function BattleLobbyPage() {
     }
   }
 
+  async function openDuel(join: boolean) {
+    if (starting) return;
+    const code = roomCode.trim();
+    setStarting(true);
+    setDuelError(null);
+    try {
+      const { id } = join
+        ? await apiRequest<{ id: string }>(`/api/battle/duel/${encodeURIComponent(code)}/join`, { method: "POST" })
+        : await apiRequest<{ id: string }>("/api/battle/duel", { method: "POST", body: { stageId: lobby?.aiStageId } });
+      router.push(`/child/battle/duel?room=${encodeURIComponent(id)}`);
+    } catch {
+      setStarting(false);
+      setDuelError(join ? "无法加入房间，请检查房间码，确认房间仍有空位。" : "暂时无法创建房间，请稍后重试。");
+    }
+  }
+
   if (!ready || (!lobby && !error)) return <ChildShell active="battle"><LoadingState label="正在召集对手…" /></ChildShell>;
   if (error || !lobby) return <ChildShell active="battle"><ErrorState message={error ?? undefined} /></ChildShell>;
 
   return (
     <ChildShell active="battle">
       <section className="battle-lobby" aria-label="对战大厅">
-        <PageHeader title="对战大厅" subtitle="挑战小塔，或接受妈妈的亲子 PK" />
+        <PageHeader title="对战大厅" subtitle={demo ? "挑战小塔，或接受妈妈的亲子 PK" : "邀请好友、挑战小塔，或接受亲子挑战"} />
+        {!demo && <WSCard className="battle-lobby-card">
+          <div className="battle-card-visual"><Swords aria-hidden="true" size={72} strokeWidth={1.7} /></div>
+          <h2>真人 1v1</h2>
+          <p>创建房间邀请好友，两人就绪后开始十回合对战。</p>
+          <WSButton type="button" onClick={() => void openDuel(false)} disabled={starting || !lobby.aiStageId}>创建房间</WSButton>
+          <form onSubmit={event => { event.preventDefault(); void openDuel(true); }}>
+            <label>好友的房间码 <input className="ws-input" value={roomCode} onChange={event => setRoomCode(event.target.value)} maxLength={21} required /></label>
+            <WSButton type="submit" disabled={starting || !roomCode.trim()}>加入房间</WSButton>
+          </form>
+          {duelError && <p role="alert">{duelError}</p>}
+        </WSCard>}
         <WSCard className="battle-lobby-card">
           <div className="battle-card-visual"><Bot aria-hidden="true" size={72} strokeWidth={1.7} /></div>
           <h2>挑战小塔</h2>

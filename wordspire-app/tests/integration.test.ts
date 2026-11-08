@@ -299,6 +299,102 @@ test("真实 HTTP：对战在服务端判题，提前结算及未实现能力返
   assert.equal(resumed.data.botConfig.level, "normal");
 });
 
+test("真实 HTTP：真人房间双人就绪、固定十回合、服务端验答和胜负结算", async () => {
+  const outsider = client();
+  expectStatus(await outsider.request("/api/auth", { action: "guest-signup", deviceId: outsider.deviceId }));
+  const stageId = "stage-fruit-1";
+  const created = await child.request("/api/battle/duel", { stageId });
+  expectStatus(created, 201);
+  const path = `/api/battle/duel/${created.data.id}`;
+  const hostReady = await child.request(`${path}/ready`, {});
+  expectStatus(hostReady);
+  assert.equal(hostReady.data.status, "waiting");
+  assert.equal(hostReady.data.question, null);
+  const joined = await secondChild.request(`${path}/join`, {});
+  expectStatus(joined);
+  assert.equal(joined.data.status, "waiting");
+  assert.equal(joined.data.opponentReady, true);
+  expectStatus(await outsider.request(`${path}/join`, {}), 409);
+  expectStatus(await outsider.request(`${path}/presence`, {}), 404);
+  expectStatus(await child.request(`${path}/answer`, { roundIndex: 1, optionId: "apple" }), 409);
+  const guestReady = await secondChild.request(`${path}/ready`, {});
+  expectStatus(guestReady);
+  assert.equal(guestReady.data.status, "playing");
+
+  const questions = (await db.query("select id, options, correct_index from questions where stage_id = $1 order by id", [stageId])).rows;
+  const roomId = created.data.id;
+  expectStatus(await outsider.request(`${path}/answer`, { roundIndex: 1, optionId: "apple" }), 404);
+  expectStatus(await child.request(`${path}/answer`, { roundIndex: 1, optionId: "apple", latencyMs: 1 }), 400);
+  expectStatus(await child.request(`${path}/answer`, { roundIndex: 2, optionId: "apple" }), 409);
+  expectStatus(await child.request(`${path}/answer`, { roundIndex: 1, optionId: "invalid-option" }), 400);
+  assert.equal((await db.query("select count(*)::int as count from duel_answers where room_id=$1", [roomId])).rows[0].count, 0);
+
+  for (let roundIndex = 1; roundIndex <= 10; roundIndex++) {
+    const expected = questions[(roundIndex - 1) % questions.length];
+    const correct = FRUIT_OPTIONS.find(option => option.label === expected.options[expected.correct_index])!.id;
+    const wrong = FRUIT_OPTIONS.find(option => option.label === expected.options[(expected.correct_index + 1) % expected.options.length])!.id;
+    const [host, guest] = await Promise.all([child.request(`${path}/presence`, {}), secondChild.request(`${path}/presence`, {})]);
+    for (const result of [host, guest]) {
+      expectStatus(result);
+      assert.equal(result.data.roundIndex, roundIndex);
+      assert.equal(result.data.question.id, expected.id);
+      assert.deepEqual(result.data.question.options.map((option: { label: string }) => option.label), expected.options);
+      assert.equal("correctIndex" in result.data.question, false);
+    }
+    if (roundIndex === 1) {
+      const attempts = await Promise.all(Array.from({ length: 2 }, () => child.request(`${path}/answer`, { roundIndex, optionId: correct })));
+      assert.deepEqual(attempts.map(item => item.response.status).sort(), [200, 409]);
+      await db.query("update duel_rooms set round_started_at = clock_timestamp() - interval '10 seconds' where id=$1", [roomId]);
+      const late = await secondChild.request(`${path}/answer`, { roundIndex, optionId: wrong });
+      expectStatus(late, 409);
+      assert.equal(late.data.error, "DUEL_ROUND_TIMEOUT");
+      expectStatus(await secondChild.request(`${path}/presence`, {}));
+    } else {
+      const results = await Promise.all([child.request(`${path}/answer`, { roundIndex, optionId: correct }),
+        secondChild.request(`${path}/answer`, { roundIndex, optionId: wrong })]);
+      results.forEach(result => expectStatus(result));
+    }
+  }
+  const host = await child.request(`${path}/presence`, {});
+  const guest = await secondChild.request(`${path}/presence`, {});
+  assert.equal(host.data.status, "finished");
+  assert.equal(host.data.result, "win");
+  assert.equal(guest.data.result, "loss");
+  assert.equal(host.data.score, guest.data.opponentScore);
+  assert.equal(host.data.question, null);
+  const saved = await db.query("select player_id, latency_ms, score from duel_answers where room_id=$1", [roomId]);
+  assert.equal(saved.rowCount, 19);
+  assert.ok(saved.rows.filter(row => row.player_id === childId).every(row => row.latency_ms >= 0 && row.latency_ms < 10000 && row.score >= 100));
+});
+
+test("真实 HTTP：真人对战恢复连接、离线关闭、主动离开和等待过期", async () => {
+  async function room() {
+    const created = await child.request("/api/battle/duel", { stageId: "stage-fruit-1" });
+    expectStatus(created, 201);
+    return { id: created.data.id, path: `/api/battle/duel/${created.data.id}` };
+  }
+  const playing = await room();
+  expectStatus(await secondChild.request(`${playing.path}/join`, {}));
+  await Promise.all([child, secondChild].map(async player => expectStatus(await player.request(`${playing.path}/ready`, {}))));
+  await db.query("update duel_rooms set guest_seen_at = clock_timestamp() - interval '15 seconds' where id=$1", [playing.id]);
+  const resumed = await secondChild.request(`${playing.path}/presence`, {});
+  expectStatus(resumed);
+  assert.equal(resumed.data.status, "playing");
+  await db.query("update duel_rooms set guest_seen_at = clock_timestamp() - interval '46 seconds' where id=$1", [playing.id]);
+  const disconnected = await child.request(`${playing.path}/presence`, {});
+  assert.equal(disconnected.data.status, "closed");
+  assert.equal(disconnected.data.endedReason, "disconnected");
+  assert.equal((await secondChild.request(`${playing.path}/presence`, {})).data.endedReason, "disconnected");
+  const abandoned = await room();
+  const left = await child.request(`${abandoned.path}/leave`, {});
+  assert.equal(left.data.endedReason, "left");
+  expectStatus(await secondChild.request(`${abandoned.path}/join`, {}), 409);
+  const waiting = await room();
+  await db.query("update duel_rooms set expires_at = clock_timestamp() where id=$1", [waiting.id]);
+  const expired = await child.request(`${waiting.path}/presence`, {});
+  assert.equal(expired.data.endedReason, "waiting_timeout");
+});
+
 test("真实 HTTP：旧签名会话检查数据库身份后换发，家长登录保留儿童数据", async () => {
   const legacy = client();
   const token = signSessionValue(JSON.stringify({ userId: childUserId, childProfileId: childId, role: "child", issuedAt: Date.now(), expiresAt: Date.now() + 3600000 }), process.env.SESSION_SECRET!);

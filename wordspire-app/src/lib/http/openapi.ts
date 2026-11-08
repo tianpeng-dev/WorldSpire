@@ -3,6 +3,7 @@ import { z } from "zod";
 import { startSchema, attemptSchema, battleSchema, unlockSchema, notifySchema, bindingSchema, changeBindingSchema } from "./contracts";
 import { guestSchema } from "../auth/auth";
 import { syncSchema, syncResponseSchema } from "./sync-contracts";
+import { duelAnswerSchema, duelCreateSchema } from "../battle/duel-contract";
 
 extendZodWithOpenApi(z);
 export function openApiDocument() {
@@ -47,6 +48,12 @@ export function openApiDocument() {
   path("get", "/api/battle", "对战大厅；缺少历史答题时 childAccuracy 为 null");
   path("post", "/api/battle", "AI 对战、提交回合和结算；亲子异步对战返回 501", battleSchema, { write: true });
   path("get", "/api/battle/{id}", "对战详情；家长需要 active 绑定", undefined, { id: true });
+  path("post", "/api/battle/duel", "创建真人对战房间", duelCreateSchema, { write: true, created: true });
+  path("post", "/api/battle/duel/{id}/join", "凭房间码加入真人对战或重新进入自己的房间", undefined, { id: true, write: true });
+  path("post", "/api/battle/duel/{id}/ready", "当前玩家主动就绪；双方就绪时开局", undefined, { id: true, write: true });
+  path("post", "/api/battle/duel/{id}/presence", "报告在线状态并获取当前回合或结果", undefined, { id: true, write: true });
+  path("post", "/api/battle/duel/{id}/answer", "提交当前回合的选项；由服务端校验身份、题目和截止时间", duelAnswerSchema, { id: true, write: true });
+  path("post", "/api/battle/duel/{id}/leave", "离开并关闭未结束的房间", undefined, { id: true, write: true });
   path("get", "/api/report", "真实学习统计；无依据的能力和成就列表为空", undefined, { childQuery: true });
   path("get", "/api/notify", "当前账号的站内通知");
   path("post", "/api/notify", "将当前账号通知标记已读", notifySchema);
