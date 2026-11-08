@@ -3,12 +3,12 @@ import { db, type Transaction, type DatabaseExecutor } from "@/lib/db";
 import { attempts, battles, battleRounds, childProfiles, leaderboardEntries, stages, users } from "@/lib/db/schema";
 import { newId } from "@/lib/utils";
 import { getStageQuestions, questionToDto } from "@/lib/child/server";
-import { calcBotConfig, calcRoundScore, simulateAiAnswer } from "./bot";
+import { botId, botLevel, calcBotConfig, calcRoundScore, nextBotLevel, simulateAiAnswer } from "./bot";
 import { childTransaction } from "../db/transaction";
 import { recordSyncChange } from "../db/sync-records";
 import { creditStars } from "../rewards/service";
 import { AppError, unsupported } from "../http/errors";
-import type { BattleDTO, Question } from "@/types";
+import type { BattleDTO } from "@/types";
 
 export async function createAiBattle(params: { childProfileId: string; stageId: string }) {
   return childTransaction(params.childProfileId, async tx => {
@@ -17,12 +17,14 @@ export async function createAiBattle(params: { childProfileId: string; stageId: 
     if (!(await getStageQuestions(stage.id, tx)).length) throw new AppError("STAGE_EMPTY", 409);
     const previous = (await tx.select().from(battles).where(and(eq(battles.childProfileId, params.childProfileId), eq(battles.stageId, stage.id), eq(battles.mode, "ai"), eq(battles.status, "in_progress"))).limit(1))[0];
     const battleId = previous?.id ?? newId();
-    if (!previous) {
-      await tx.insert(battles).values({ id: battleId, mode: "ai", childProfileId: params.childProfileId, opponentId: "bot_xiaota", stageId: stage.id, status: "in_progress" });
-      await recordSyncChange(tx, { childProfileId: params.childProfileId, entity: "battles", entityId: battleId, op: "insert", payload: { stageId: stage.id, status: "in_progress", mode: "ai" } });
-    }
-    const accuracy = await recentAccuracy(params.childProfileId, tx);
-    return { battleId, botConfig: calcBotConfig(accuracy ?? 0.5) };
+    if (previous) return { battleId, botConfig: calcBotConfig(botLevel(previous.opponentId)) };
+    const history = await tx.select().from(battles)
+      .where(and(eq(battles.childProfileId, params.childProfileId), eq(battles.mode, "ai"), eq(battles.status, "resolved")))
+      .orderBy(desc(battles.baseDate), desc(battles.id)).limit(2);
+    const level = nextBotLevel(history);
+    await tx.insert(battles).values({ id: battleId, mode: "ai", childProfileId: params.childProfileId, opponentId: botId(level), stageId: stage.id, status: "in_progress" });
+    await recordSyncChange(tx, { childProfileId: params.childProfileId, entity: "battles", entityId: battleId, op: "insert", payload: { stageId: stage.id, status: "in_progress", mode: "ai" } });
+    return { battleId, botConfig: calcBotConfig(level) };
   });
 }
 
@@ -41,19 +43,21 @@ export async function submitBattleRound(params: { battleId: string; childProfile
     const existing = rows.find(row => row.playerId === params.childProfileId && row.roundIndex === params.roundIndex);
     if (existing) {
       if (existing.questionId !== params.questionId || existing.correct !== correct || existing.latencyMs !== params.latencyMs) throw new AppError("IDEMPOTENCY_CONFLICT", 409);
+      const opponent = rows.find(row => row.playerId === battle.opponentId && row.roundIndex === params.roundIndex);
+      if (!opponent) throw new Error("对战缺少 AI 回合作答");
       return { battleId: battle.id, status: battle.status, roundIndex: Math.min(3, params.roundIndex + 1), childScore: existing.score,
-        aiScore: rows.find(row => row.playerId === battle.opponentId && row.roundIndex === params.roundIndex)!.score };
+        aiScore: opponent.score, aiLatencyMs: opponent.latencyMs };
     }
     if (battle.status !== "in_progress" || rows.filter(row => row.playerId === params.childProfileId).length !== params.roundIndex - 1) throw new AppError("BATTLE_NOT_ACCEPTABLE", 409);
-    const ai = simulateAiAnswer(question as Question, calcBotConfig((await recentAccuracy(params.childProfileId, tx)) ?? 0.5));
+    const ai = simulateAiAnswer(calcBotConfig(botLevel(battle.opponentId)));
     const childScore = calcRoundScore(correct, params.latencyMs);
     const aiScore = calcRoundScore(ai.correct, ai.latencyMs);
     await tx.insert(battleRounds).values([
       { id: newId(), ...params, playerId: params.childProfileId, correct, score: childScore },
       { id: newId(), battleId: battle.id, roundIndex: params.roundIndex, playerId: battle.opponentId, questionId: question.id, correct: ai.correct, latencyMs: ai.latencyMs, score: aiScore },
     ]);
-    if (params.roundIndex === 3) return { battleId: battle.id, status: "resolved", roundIndex: 3, childScore, aiScore, ...await resolveInTransaction(tx, battle) };
-    return { battleId: battle.id, status: "in_progress", roundIndex: params.roundIndex + 1, childScore, aiScore };
+    if (params.roundIndex === 3) return { battleId: battle.id, status: "resolved", roundIndex: 3, childScore, aiScore, aiLatencyMs: ai.latencyMs, ...await resolveInTransaction(tx, battle) };
+    return { battleId: battle.id, status: "in_progress", roundIndex: params.roundIndex + 1, childScore, aiScore, aiLatencyMs: ai.latencyMs };
   });
 }
 
@@ -96,7 +100,7 @@ export async function getBattle(battleId: string) {
   const dto: BattleDTO & { childProfileId: string } = { id: battle.id, mode: battle.mode as BattleDTO["mode"], status: battle.status as BattleDTO["status"],
     roundIndex, totalRounds: 3, childScore: rounds.filter(row => row.playerId === battle.childProfileId).reduce((sum, row) => sum + row.score, 0),
     opponentScore: rounds.filter(row => row.playerId === battle.opponentId).reduce((sum, row) => sum + row.score, 0), childName: child.name,
-    opponentName: battle.mode === "ai" ? "小塔" : other?.nickname ?? "", question: question ? questionToDto(question) : null,
+    opponentName: battle.mode === "ai" ? `小塔（${calcBotConfig(botLevel(battle.opponentId)).label}）` : other?.nickname ?? "", question: question ? questionToDto(question) : null,
     winnerId: battle.winnerId, rank, childProfileId: battle.childProfileId };
   return { battle: dto, rounds };
 }

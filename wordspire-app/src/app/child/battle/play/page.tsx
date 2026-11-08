@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Bot, UserRound } from "lucide-react";
 import {
   ChildShell,
@@ -21,48 +21,70 @@ export default function BattlePlayPage() {
   const [battle, setBattle] = useState<BattleDTO | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [answering, setAnswering] = useState(false);
-  const [startedAt, setStartedAt] = useState<number>(() => Date.now());
+  const round = useRef<{ startedAt: number; controller: AbortController; timer?: ReturnType<typeof setTimeout> } | null>(null);
 
   const battleId = params?.get("battleId") ?? "demo-battle";
 
   useEffect(() => {
     if (!ready || !params) return;
-    setStartedAt(Date.now());
+    const current = { startedAt: performance.now(), controller: new AbortController() } as NonNullable<typeof round.current>;
+    round.current = current;
+    const cleanup = () => {
+      current.controller.abort();
+      clearTimeout(current.timer);
+      if (round.current === current) round.current = null;
+    };
+    setBattle(null);
+    setError(null);
     setAnswering(false);
     if (demo) {
       setBattle(params.get("mode") === "parent_async" ? { ...DEMO_BATTLE, mode: "parent_async", opponentName: "妈妈" } : DEMO_BATTLE);
-      return;
+      return cleanup;
     }
-    void apiRequest<BattleDTO | { battle: BattleDTO }>(`/api/battle/${encodeURIComponent(battleId)}`)
-      .then((payload) => setBattle("battle" in payload ? payload.battle : payload))
-      .catch(() => setError("对战题目暂时没有准备好，请回大厅再试一次。"));
+    void apiRequest<BattleDTO | { battle: BattleDTO }>(`/api/battle/${encodeURIComponent(battleId)}`, { signal: current.controller.signal })
+      .then((payload) => {
+        if (current.controller.signal.aborted) return;
+        current.startedAt = performance.now();
+        setBattle("battle" in payload ? payload.battle : payload);
+      })
+      .catch(() => { if (!current.controller.signal.aborted) setError("对战题目暂时没有准备好，请回大厅再试一次。"); });
+    return cleanup;
   }, [battleId, demo, params, ready]);
 
   async function answer(question: QuestionDTO, optionId: string) {
-    if (!battle || answering) return;
+    const current = round.current;
+    if (!battle || answering || !current) return;
     setAnswering(true);
     if (demo) {
       router.push(addQuery("/child/battle/result", { battleId, mode: battle.mode }, true));
       return;
     }
     try {
-      const result = await apiRequest<{ status: string; battleId: string; roundIndex?: number }>("/api/battle", {
+      const result = await apiRequest<{ status: string; battleId: string; roundIndex?: number; aiLatencyMs: number }>("/api/battle", {
         method: "POST",
+        signal: current.controller.signal,
         body: {
           action: "submit-round",
           battleId,
           questionId: question.id,
           optionId,
-          latencyMs: Math.max(0, Date.now() - startedAt),
+          latencyMs: Math.min(120000, Math.round(performance.now() - current.startedAt)),
           roundIndex: battle.roundIndex,
         },
       });
-      if (result.status === "resolved" || result.status === "finished") {
-        router.push(`/child/battle/result?battleId=${encodeURIComponent(battleId)}`);
-      } else {
-        router.push(`/child/battle/play?battleId=${encodeURIComponent(battleId)}&round=${result.roundIndex ?? battle.roundIndex + 1}`);
-      }
+      if (current.controller.signal.aborted) return;
+      const remaining = result.aiLatencyMs - (performance.now() - current.startedAt);
+      const advance = () => {
+        if (result.status === "resolved" || result.status === "finished") {
+          router.push(`/child/battle/result?battleId=${encodeURIComponent(battleId)}`);
+        } else {
+          router.push(`/child/battle/play?battleId=${encodeURIComponent(battleId)}&round=${result.roundIndex ?? battle.roundIndex + 1}`);
+        }
+      };
+      if (remaining > 0) current.timer = setTimeout(advance, remaining);
+      else advance();
     } catch {
+      if (current.controller.signal.aborted) return;
       setAnswering(false);
       setError("这一回合没有提交成功，请再试一次。" );
     }
@@ -97,6 +119,7 @@ export default function BattlePlayPage() {
             <OptionCard key={option.id} visual={option.visual} label={option.label} disabled={answering} onClick={() => void answer(question, option.id)} />
           ))}
         </div>
+        {answering && <p role="status">正在等待回合结果…</p>}
       </section>
     </ChildShell>
   );

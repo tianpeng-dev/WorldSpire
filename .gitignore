@@ -1,6 +1,7 @@
 .codex-runtime/
 wordspire-app/.next-startup-stale-*/
 .work/
+/.scratch/
 .DS_Store
 .claude/
 .trae/

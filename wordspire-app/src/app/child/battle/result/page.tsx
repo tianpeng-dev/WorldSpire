@@ -1,5 +1,7 @@
 "use client";
 
+import { isBotId } from "@/lib/battle/bot";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ChildShell, LoadingState, WSCard } from "@/components/child/ChildShell";
@@ -28,7 +30,7 @@ export default function BattleResultPage() {
   if (!ready || (!battle && !error)) return <ChildShell active="battle"><LoadingState label="正在整理对战结果…" /></ChildShell>;
   if (error || !battle) return <ChildShell active="battle"><div className="ws-state-panel ws-state-panel-error" role="alert"><p>{error ?? "结果为空"}</p></div></ChildShell>;
 
-  const won = battle.winnerId === "demo-child" || (battle.winnerId !== null && battle.winnerId !== "bot_xiaota");
+  const won = battle.winnerId !== null && !isBotId(battle.winnerId);
   const scoreline = `${battle.childName} ${battle.childScore} : ${battle.opponentScore} ${battle.opponentName}`;
   return (
     <ChildShell active="battle">

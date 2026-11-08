@@ -256,6 +256,7 @@ test("真实 HTTP：收藏并发兑换只扣除一次余额", async () => {
 test("真实 HTTP：对战在服务端判题，提前结算及未实现能力返回明确错误", async () => {
   const battle = await child.request("/api/battle", { action: "create-ai", stageId: "stage-fruit-1", childAccuracy: 1 }); expectStatus(battle, 201);
   battleId = battle.data.battleId;
+  assert.equal(battle.data.botConfig.level, "easy");
   expectStatus(await child.request("/api/battle", { action: "resolve", battleId }), 409);
   expectStatus(await secondChild.request(`/api/battle/${battleId}`), 403);
   expectStatus(await guardian.request(`/api/battle/${battleId}`));
@@ -269,6 +270,8 @@ test("真实 HTTP：对战在服务端判题，提前结算及未实现能力返
     const request = { action: "submit-round", battleId, questionId: question.id, roundIndex, optionId, latencyMs: 0, correct: false, aiCorrect: true };
     const responses = await Promise.all([child.request("/api/battle", request), child.request("/api/battle", request)]);
     responses.forEach(result => expectStatus(result));
+    assert.equal(responses[0].data.aiLatencyMs, responses[1].data.aiLatencyMs);
+    assert.ok(responses[0].data.aiLatencyMs >= 3000 && responses[0].data.aiLatencyMs <= 5000);
   }
   const final = (await child.request(`/api/battle/${battleId}`)).data.battle;
   assert.equal(final.status, "resolved");
@@ -277,6 +280,23 @@ test("真实 HTTP：对战在服务端判题，提前结算及未实现能力返
   assert.equal(Number((await db.query("select count(*) from battle_rounds where battle_id=$1", [battleId])).rows[0].count), 6);
   const after = (await db.query("select balance from star_wallets where child_profile_id=$1", [childId])).rows[0].balance;
   assert.equal(after, before + (final.winnerId === childId ? 10 : 0));
+  assert.equal(final.winnerId, childId);
+  const rematch = await child.request("/api/battle", { action: "create-ai", stageId: "stage-fruit-1" });
+  expectStatus(rematch, 201);
+  assert.equal(rematch.data.botConfig.level, "easy");
+  for (let roundIndex = 1; roundIndex <= 3; roundIndex++) {
+    const id = rematch.data.battleId;
+    const { question } = (await child.request(`/api/battle/${id}`)).data.battle;
+    const row = (await db.query("select options, correct_index from questions where id=$1", [question.id])).rows[0];
+    const optionId = FRUIT_OPTIONS.find(option => option.label === row.options[row.correct_index])!.id;
+    expectStatus(await child.request("/api/battle", { action: "submit-round", battleId: id, questionId: question.id, roundIndex, optionId, latencyMs: 1000 }));
+  }
+  const promoted = await child.request("/api/battle", { action: "create-ai", stageId: "stage-fruit-1" });
+  expectStatus(promoted, 201);
+  assert.equal(promoted.data.botConfig.level, "normal");
+  const resumed = await child.request("/api/battle", { action: "create-ai", stageId: "stage-fruit-1" });
+  assert.equal(resumed.data.battleId, promoted.data.battleId);
+  assert.equal(resumed.data.botConfig.level, "normal");
 });
 
 test("真实 HTTP：旧签名会话检查数据库身份后换发，家长登录保留儿童数据", async () => {

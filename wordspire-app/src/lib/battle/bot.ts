@@ -8,52 +8,54 @@
 // 纯概率模型，本地可推理，离线可用，无 LLM 调用
 // ================================================================
 
-import type { BattleRound, Question } from "../../types";
+import type { BattleRound } from "../../types";
 
-interface AiBotConfig {
-  /** 目标准确率 0–1 */
-  targetAccuracy: number;
-  /** 平均反应时间（毫秒） */
-  avgLatencyMs: number;
-  /** 反应时间标准差 */
-  latencyStdMs: number;
-  /** 失误率（即使会做也故意错的比例，模拟"走神"） */
-  slipRate: number;
+export const botLevels = ["easy", "normal", "hard"] as const;
+type BotLevel = typeof botLevels[number];
+const profiles = {
+  easy: { minLatencyMs: 3000, maxLatencyMs: 5000, targetAccuracy: 0.55, label: "简单" },
+  normal: { minLatencyMs: 2300, maxLatencyMs: 4000, targetAccuracy: 0.7, label: "普通" },
+  hard: { minLatencyMs: 1600, maxLatencyMs: 3000, targetAccuracy: 0.85, label: "困难" },
+};
+
+export function botLevel(opponentId: string): BotLevel {
+  if (opponentId === "bot_xiaota") return "easy";
+  const level = botLevels.find(item => botId(item) === opponentId);
+  if (!level) throw new Error("未知的 AI 对手标识");
+  return level;
 }
 
-/**
- * 根据孩子近 7 日准确率计算 AI 配置，保证对手有输有赢
- */
-export function calcBotConfig(childAccuracy: number): AiBotConfig {
-  // AI 准确率略低于孩子，给孩子 60% 左右胜率
-  const target = Math.max(0.35, Math.min(0.75, childAccuracy - 0.08));
-  return {
-    targetAccuracy: target,
-    avgLatencyMs: 1800 + Math.random() * 800,
-    latencyStdMs: 600,
-    slipRate: 0.08,
-  };
+export function botId(level: BotLevel) {
+  return `bot_xiaota_${level}`;
+}
+
+export function isBotId(id: string) {
+  return id === "bot_xiaota" || botLevels.some(level => botId(level) === id);
+}
+
+export function nextBotLevel(history: { opponentId: string; winnerId: string | null; childProfileId: string }[]): BotLevel {
+  const latest = history[0];
+  if (!latest) return "easy";
+  const level = botLevel(latest.opponentId);
+  const previous = history[1];
+  if (!previous || !latest.winnerId || !previous.winnerId || botLevel(previous.opponentId) !== level) return level;
+  const won = latest.winnerId === latest.childProfileId;
+  if (won !== (previous.winnerId === previous.childProfileId)) return level;
+  return botLevels[Math.max(0, Math.min(botLevels.length - 1, botLevels.indexOf(level) + (won ? 1 : -1)))];
+}
+
+export function calcBotConfig(level: BotLevel) {
+  return { level, ...profiles[level] };
 }
 
 /**
  * 生成 AI 在一道题上的作答结果
  */
 export function simulateAiAnswer(
-  question: Question,
-  config: AiBotConfig
+  config: ReturnType<typeof calcBotConfig>
 ): { correct: boolean; latencyMs: number } {
-  // 近似正态分布的反应时间（Box-Muller 简化）
-  const u1 = Math.random() || 0.0001;
-  const u2 = Math.random();
-  const z = Math.sqrt(-2 * Math.log(u1)) * Math.cos(2 * Math.PI * u2);
-  let latency = config.avgLatencyMs + z * config.latencyStdMs;
-  latency = Math.max(600, Math.min(5000, latency));
-
-  // 是否答对：基础准确率 - 失误率
-  const effectiveAcc = config.targetAccuracy * (1 - config.slipRate);
-  const correct = Math.random() < effectiveAcc;
-
-  return { correct, latencyMs: Math.round(latency) };
+  const latencyMs = config.minLatencyMs + Math.floor(Math.random() * (config.maxLatencyMs - config.minLatencyMs + 1));
+  return { correct: Math.random() < config.targetAccuracy, latencyMs };
 }
 
 /**

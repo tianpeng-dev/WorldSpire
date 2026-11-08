@@ -1,12 +1,24 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { updateProficiency, pickDifficulty, isStuck } from "../src/lib/adaptive/engine.ts";
-import { calcRoundScore, determineWinner } from "../src/lib/battle/bot.ts";
+import { botId, calcRoundScore, determineWinner, nextBotLevel } from "../src/lib/battle/bot.ts";
 import { signSessionValue, verifySessionValue } from "../src/lib/auth/session-codec.ts";
 import { decideSyncVersion } from "../src/lib/db/sync-policy.ts";
 import { transitionStageStatus } from "../src/lib/child/stage-state.ts";
 import { sameAttempt } from "../src/lib/learning/idempotency.ts";
 import { spendStars } from "../src/lib/child/rewards.ts";
+
+test("AI 难度根据同级连胜或连败调整，平局打断连续结果", () => {
+  const opponentId = botId("normal");
+  const win = { childProfileId: "child", opponentId, winnerId: "child" };
+  const loss = { ...win, winnerId: opponentId };
+  assert.equal(nextBotLevel([]), "easy");
+  assert.equal(nextBotLevel([win, win]), "hard");
+  assert.equal(nextBotLevel([loss, loss]), "easy");
+  assert.equal(nextBotLevel([win, loss]), "normal");
+  assert.equal(nextBotLevel([win, { ...win, winnerId: null }]), "normal");
+  assert.equal(nextBotLevel([win, { ...win, opponentId: botId("easy") }]), "normal");
+});
 
 test("BKT mastery rises on a correct answer and stays bounded", () => {
   const next = updateProficiency(null, true);
